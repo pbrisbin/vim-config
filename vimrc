@@ -89,6 +89,7 @@ let g:haddock_indexfiledir = "/home/patrick/.vim"
 
 " supertab
 let g:SuperTabLongestHighlight = 1
+let g:SuperTabLongestEnhanced  = 1
 let g:SuperTabDefaultCompletionType = 'context'
 
 " default comment symbols

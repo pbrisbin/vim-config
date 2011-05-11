@@ -20,16 +20,8 @@ you might find my setup enjoyable.
 If you develop heavily in these languages, you might consider someone 
 else's setup.
 
-### Usage
+### Installation
 
-Steps:
-
-    cd
-    mkdir vim-backup
-    mv .vimrc vim-backup
-    cp -r .vim vim-backup/
-    git clone xxx vim-config
-    cp -r vim-config/* .vim/
-    ln -s .vim/vimrc ./.vimrc
-    
-Enjoy.
+1. Backup your existing setup
+2. Copy this repo's contents into ~/.vim
+3. `ln -s ~/.vim/vimrc ~/.vim`

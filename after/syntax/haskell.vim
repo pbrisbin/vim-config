@@ -1,0 +1,1 @@
+/home/patrick/Code/vim/html-template-syntax/after/syntax/haskell.vim

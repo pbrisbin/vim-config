@@ -152,7 +152,6 @@ if has('autocmd')
   au BufEnter *.rem          setlocal filetype=remind
   au BufEnter *.pdc          setlocal filetype=pdc
   au BufEnter *.md           setlocal filetype=pdc
-  au BufEnter *.hs           compiler ghc
 
   if $SCREEN_CONF_DIR != ""
     au BufEnter $SCREEN_CONF_DIR/* setlocal filetype=screen

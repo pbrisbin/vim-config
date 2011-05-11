@@ -38,7 +38,6 @@ let s:scriptname = "haskell_doc.vim"
 " script parameters
 "   g:haddock_browser            *mandatory* which browser to call
 "   g:haddock_browser_callformat [optional] how to call browser
-"   g:haddock_browser_nosilent   [optional] don't exec the browser silently
 "   g:haddock_indexfiledir       [optional] where to put 'haddock_index.vim'
 "   g:haddock_docdir             [optional] where to find html docs
 "   g:ghc                        [optional] which ghc to call
@@ -178,11 +177,8 @@ function! DocBrowser(url)
   endif
   " start browser to open url, according to specified format
   let url = a:url=~'^\(file://\|http://\)' ? a:url : 'file://'.a:url
-  if (exists("g:haddock_browser_nosilent") && g:haddock_browser_nosilent)
-    exe '!'.printf(g:haddock_browser_callformat,g:haddock_browser,escape(url,'#%')) 
-  else
-    silent exe '!'.printf(g:haddock_browser_callformat,g:haddock_browser,escape(url,'#%')) 
-  endif
+  silent exe '!'.printf(g:haddock_browser_callformat,g:haddock_browser,escape(url,'#%')) 
+  redraw!
 endfunction
 
 "Doc/Doct are an old interface for documentation lookup

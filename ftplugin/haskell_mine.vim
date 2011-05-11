@@ -8,14 +8,14 @@ let b:ghc_staticoptions = '-ilib'
 let g:StartComment      = "--"
 let g:SuperTabContextDefaultCompletionType = '<c-x><c-o>'
 
+nmap <LocalLeader>h :call Hlint()<CR>
+
 " set the compiler to hlint and make, then put it back to ghc
 function! Hlint()
   compiler hlint
   make
   compiler ghc
 endfunction
-
-command! Hlint call Hlint()
 
 command! Interpret :! ghci -ilib %
 command! Run       :! runhaskell %

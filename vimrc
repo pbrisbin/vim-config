@@ -43,7 +43,6 @@ set backspace=indent,eol,start
 set completeopt=menuone,preview
 set cursorline
 set expandtab
-set formatoptions-=t
 set history=50
 set hlsearch
 set ignorecase
@@ -51,17 +50,12 @@ set incsearch
 set laststatus=2
 set mouse=v
 set nobackup
-set nomousehide
 set nowrap
-set novisualbell
 set number
 set ruler
 set scrolloff=999
 set shiftwidth=2
 set shortmess+=r
-set showmode
-set showcmd
-set showtabline=1
 set sm
 set smartcase
 set smartindent

@@ -76,9 +76,8 @@ filetype plugin indent on
 " local leader commands
 let maplocalleader = ','
 
-" haskellmode-vim needs the browser set as early as possible
+" haskellmode-vim needs these set as early as possible
 let g:haddock_browser = $BROWSER
-let g:haddock_browser_nosilent = 1
 let g:haddock_indexfiledir = "/home/patrick/.vim"
 
 " supertab

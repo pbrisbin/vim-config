@@ -22,6 +22,9 @@ else's setup.
 
 ### Installation
 
-1. Backup your existing setup
-2. Copy this repo's contents into ~/.vim
-3. `ln -s ~/.vim/vimrc ~/.vim`
+Backup your current setup, clone mine, and a symlink for `.vimrc`:
+
+    cd
+    mkdir vim-backup && mv .vimrc .vim vim-backup/
+    git clone git://github.com/pbrisbin/vim-config.git .vim
+    ln -s .vim/vimrc .vim

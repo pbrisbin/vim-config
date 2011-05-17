@@ -1,0 +1,20 @@
+[submodule "bundle/haskellmode"]
+	path = bundle/haskellmode
+	url = git://github.com/ehamberg/haskellmode-vim.git
+	ignore = dirty
+[submodule "bundle/supertab"]
+	path = bundle/supertab
+	url = git://github.com/ervandew/supertab.git
+	ignore = dirty
+[submodule "html-template-syntax"]
+	path = html-template-syntax
+	url = git://github.com/pbrisbin/html-template-syntax.git
+	ignore = dirty
+[submodule "bundle/hlint"]
+	path = bundle/hlint
+	url = git://github.com/vim-scripts/hlint.git
+	ignore = dirty
+[submodule "bundle/hoogle"]
+	path = bundle/hoogle
+	url = https://github.com/Twinside/vim-hoogle.git
+	ignore = dirty

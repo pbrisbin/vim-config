@@ -2,6 +2,11 @@
 " ~/.vimrc by pbrisbin 2010
 "
 
+" load all submodules via pathogen
+filetype off
+call pathogen#runtime_append_all_bundles()
+call pathogen#helptags()
+
 " options {{{
 set nocompatible
 

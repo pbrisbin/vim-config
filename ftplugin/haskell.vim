@@ -1,14 +1,21 @@
-"
-" general Haskell source settings
-" (shared functions are in autoload/haskellmode.vim)
-"
-" (Claus Reinke, last modified: 28/04/2009)
-"
-" part of haskell plugins: http://projects.haskell.org/haskellmode-vim
-" please send patches to <claus.reinke@talk21.com>
+compiler ghc
+setlocal autochdir
+setlocal formatoptions+=w " for hamlet blocks
+setlocal path+=lib
+setlocal shiftwidth=4
 
-" try gf on import line, or ctrl-x ctrl-i, or [I, [i, ..
-setlocal include=^import\\s*\\(qualified\\)\\?\\s*
-setlocal includeexpr=substitute(v:fname,'\\.','/','g').'.'
-setlocal suffixesadd=hs,lhs,hsc
+let b:ghc_staticoptions = '-ilib'
+let g:StartComment      = "--"
+let g:SuperTabContextDefaultCompletionType = '<c-x><c-o>'
 
+nmap <LocalLeader>h :call Hlint()<CR>
+
+" set the compiler to hlint and make, then put it back to ghc
+function! Hlint()
+  compiler hlint
+  make
+  compiler ghc
+endfunction
+
+command! Interpret :! ghci -ilib %
+command! Run       :! runhaskell %

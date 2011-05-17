@@ -22,9 +22,30 @@ else's setup.
 
 ### Installation
 
-Backup your current setup, clone mine, and a symlink for `.vimrc`:
+1. Backup your current setup
 
-    cd
-    mkdir vim-backup && mv .vimrc .vim vim-backup/
-    git clone git://github.com/pbrisbin/vim-config.git .vim
-    ln -s .vim/vimrc .vim
+    mkdir ~/vim_backup && cp -r ~/.vim ~/.vimrc ~/vim_backup/
+
+2. Clone my repo to your vim directory
+
+    git clone git://github.com/pbrisbin/vim-config.git ~/.vim
+
+3. Initialize all of the submodule plugins
+
+    cd ~/.vim && git submodule update --init
+
+4. Link your .vimrc
+
+    ln -s ~/.vim/vimrc ~/.vimrc
+
+Enjoy!
+
+### Thanks
+
+* [rson][], my first ever vimrc was taken mostly from his
+* [sam7wx][], I copied the submodule idea from his repo
+* Anyone else who may have written or now maintains a plugin used in 
+  this config.
+
+[rson]:   https://github.com/rson/vimfiles
+[sam7wx]: https://github.com/sam7wx/dotvim

@@ -18,3 +18,6 @@
 	path = bundle/hoogle
 	url = https://github.com/Twinside/vim-hoogle.git
 	ignore = dirty
+[submodule "bundle/pdc"]
+	path = bundle/pdc
+	url = git://github.com/vim-scripts/pdc.vim.git

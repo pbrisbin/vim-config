@@ -24,19 +24,19 @@ else's setup.
 
 1. Backup your current setup
 
-`mkdir ~/vim_backup && cp -r ~/.vim ~/.vimrc ~/vim_backup/'
+`mkdir ~/vim_backup && cp -r ~/.vim ~/.vimrc ~/vim_backup/`
 
 2. Clone my repo to your vim directory
 
-`git clone git://github.com/pbrisbin/vim-config.git ~/.vim'
+`git clone git://github.com/pbrisbin/vim-config.git ~/.vim`
 
 3. Initialize all of the submodule plugins
 
-`cd ~/.vim && git submodule update --init'
+`cd ~/.vim && git submodule update --init`
 
 4. Link your .vimrc
 
-`ln -s ~/.vim/vimrc ~/.vimrc'
+`ln -s ~/.vim/vimrc ~/.vimrc`
 
 Enjoy!
 

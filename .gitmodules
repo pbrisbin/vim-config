@@ -6,8 +6,8 @@
 	path = bundle/supertab
 	url = git://github.com/ervandew/supertab.git
 	ignore = dirty
-[submodule "html-template-syntax"]
-	path = html-template-syntax
+[submodule "bundle/html-template-syntax"]
+	path = bundle/html-template-syntax
 	url = git://github.com/pbrisbin/html-template-syntax.git
 	ignore = dirty
 [submodule "bundle/hlint"]

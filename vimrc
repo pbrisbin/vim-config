@@ -116,6 +116,13 @@ inoremap jj <Esc>
 " a transpose key
 nmap <LocalLeader>t xp
 
+"make
+nnoremap <LocalLeader>k :make<CR>
+
+" quickfix
+nmap <LocalLeader>n :cn<CR>
+nmap <LocalLeader>p :cp<CR>
+
 " comment/uncomment a visual block
 vmap <LocalLeader>c :call CommentLines()<CR>
 
@@ -131,6 +138,9 @@ if has('autocmd')
 
   au BufWritePost ~/.vimrc     source %
   au BufWritePost ~/.vim/vimrc source %
+
+  " reload Xdefaults when written
+  au BufWritePost ~/.Xdefaults !xrdb ~/.Xdefaults
 
   " always do these
   au BufRead     * call SetStatusLine()

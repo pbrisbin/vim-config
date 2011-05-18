@@ -24,7 +24,7 @@ else's setup.
 
 * Backup your current setup
 
-`mkdir ~/vim_backup && cp -r ~/.vim ~/.vimrc ~/vim_backup/`
+`mkdir ~/vim_backup && mv ~/.vim ~/.vimrc ~/vim_backup/`
 
 * Clone my repo to your vim directory
 

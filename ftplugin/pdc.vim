@@ -13,7 +13,8 @@ map! <F1> <ESC>gqapi
 map! <F2> <ESC>gqqji
 map! <F3> <ESC>kgqji
 
-command! PDF :! (file="%"; markdown2pdf -o "${file\%.*}.pdf" "$file" &>/dev/null) &
+command! PDF  :! (file="%"; markdown2pdf -o "${file\%.*}.pdf" "$file" &>/dev/null) &
+command! HTML :! (file="%"; pandoc -o "${file\%.*}.html" "$file" &>/dev/null) &
 
 if $DISPLAY != ""
   command! Open :! webpreview --open %

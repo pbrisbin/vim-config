@@ -1,6 +1,6 @@
 source ~/.vim/autofix.vim
 
-setlocal formatoptions+=aw
+setlocal formatoptions+=twna
 setlocal nohlsearch
 setlocal spell
 

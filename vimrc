@@ -48,6 +48,7 @@ set backspace=indent,eol,start
 set completeopt=menuone,preview
 set cursorline
 set expandtab
+set formatoptions-=t
 set history=50
 set hlsearch
 set ignorecase

@@ -213,8 +213,6 @@ function! CommentLines()
   endtry
 endfunction
 
-command! DiffSaved call s:DiffWithSaved()
-
 function! MapToggle(key, opt)
   let cmd = ':set '.a:opt.'! \| set '.a:opt."?\<CR>"
   exec 'nnoremap '.a:key.' '.cmd

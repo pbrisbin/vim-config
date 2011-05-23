@@ -26,3 +26,7 @@
 	path = bundle/nerdcommenter
 	url = git://github.com/scrooloose/nerdcommenter.git
 	ignore = dirty
+[submodule "bundle/delimitmate"]
+	path = bundle/delimitmate
+	url = git://github.com/Raimondi/delimitMate.git
+	ignore = dirty

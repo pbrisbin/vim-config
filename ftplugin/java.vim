@@ -13,8 +13,6 @@ let g:EclimShowCurrentError = 0
 let g:EclimPhpValidate      = 0
 let g:EclimXmlValidate      = 0
 
-let g:StartComment="//"
-
 nnoremap <silent> <LocalLeader>i :JavaImport<CR>
 nnoremap <silent> <LocalLeader>d :JavaDocSearch -x declarations<CR>
 nnoremap <silent> <LocalLeader><CR> :JavaSearchContext<CR>

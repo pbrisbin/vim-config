@@ -21,3 +21,8 @@
 [submodule "bundle/pdc"]
 	path = bundle/pdc
 	url = git://github.com/vim-scripts/pdc.vim.git
+	ignore = dirty
+[submodule "bundle/nerdcommenter"]
+	path = bundle/nerdcommenter
+	url = git://github.com/scrooloose/nerdcommenter.git
+	ignore = dirty

@@ -92,10 +92,6 @@ let g:SuperTabLongestHighlight = 1
 let g:SuperTabLongestEnhanced  = 1
 let g:SuperTabDefaultCompletionType = 'context'
 
-" default comment symbols
-let g:StartComment="#"
-let g:EndComment=""
-
 " }}}
 
 " keymaps {{{
@@ -124,9 +120,6 @@ nnoremap <LocalLeader>k :make<CR>
 " quickfix
 nmap <LocalLeader>n :cn<CR>
 nmap <LocalLeader>p :cp<CR>
-
-" comment/uncomment a visual block
-vmap <LocalLeader>c :call CommentLines()<CR>
 
 " save the current file as root
 cmap w!! w !sudo tee % >/dev/null<CR>:e!<CR><CR>
@@ -201,16 +194,6 @@ function! OpenFoldOnRestore()
     endif
     unlet b:doopenfold 
   endif
-endfunction
-
-function! CommentLines()
-  try
-    execute ":s@^".g:StartComment."@\@g"
-    execute ":s@".g:EndComment."$@@g"
-  catch
-    execute ":s@^@".g:StartComment."@g"
-    execute ":s@$@".g:EndComment."@g"
-  endtry
 endfunction
 
 function! MapToggle(key, opt)

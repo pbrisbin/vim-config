@@ -4,7 +4,6 @@ setlocal formatoptions+=w " for hamlet blocks
 setlocal path+=lib
 setlocal shiftwidth=4
 
-let g:StartComment = "--"
 let g:SuperTabContextDefaultCompletionType = '<c-x><c-o>'
 
 nmap <LocalLeader>h :call Hlint()<CR>

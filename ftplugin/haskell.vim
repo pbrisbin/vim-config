@@ -1,5 +1,4 @@
 compiler ghc
-setlocal autochdir
 setlocal formatoptions+=w " for hamlet blocks
 setlocal path+=lib
 setlocal shiftwidth=4

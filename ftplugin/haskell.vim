@@ -6,7 +6,7 @@ setlocal shiftwidth=4
 
 let g:SuperTabContextDefaultCompletionType = '<c-x><c-o>'
 
-nmap <LocalLeader>h :call Hlint()<CR>
+nmap <Leader>h :call Hlint()<CR>
 
 " set the compiler to hlint and make, then put it back to ghc
 function! Hlint()

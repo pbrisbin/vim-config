@@ -112,15 +112,12 @@ nnoremap <C-p> :prev<CR>
 " escape is too far
 inoremap jj <Esc>
 
-" a transpose key
-nmap <LocalLeader>t xp
-
 "make
-nnoremap <LocalLeader>k :make<CR>
+nnoremap <Leader>k :make<CR>
 
 " quickfix
-nmap <LocalLeader>n :cn<CR>
-nmap <LocalLeader>p :cp<CR>
+nmap <Leader>n :cn<CR>
+nmap <Leader>p :cp<CR>
 
 " save the current file as root
 cmap w!! w !sudo tee % >/dev/null<CR>:e!<CR><CR>

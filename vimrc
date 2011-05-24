@@ -79,7 +79,8 @@ set wildmode=longest,full
 syntax on
 filetype plugin indent on
 
-" local leader commands
+" leader commands
+let mapleader = ','
 let maplocalleader = ','
 
 " haskellmode-vim needs these set as early as possible

@@ -144,7 +144,6 @@ if has('autocmd')
   au BufEnter * let &titleold    = substitute(getcwd(), $HOME, "~", '')
 
   " file types for nonstandard/additional config files
-  au BufEnter ~/.mutt/*      setlocal filetype=muttrc
   au BufEnter ~/.mutt/temp/* setlocal filetype=mail
   au BufEnter ~/.xcolors/*   setlocal filetype=xdefaults
   au BufEnter ~/.conky/*     setlocal filetype=conkyrc

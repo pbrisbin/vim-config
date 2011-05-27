@@ -92,6 +92,11 @@ let b:ghc_staticoptions    = '-ilib'
 let g:SuperTabLongestHighlight = 1
 let g:SuperTabLongestEnhanced  = 1
 let g:SuperTabDefaultCompletionType = 'context'
+let g:SuperTabContextDefaultCompletionType = "<c-n>"
+
+" commenter
+let NERDCreateDefaultMappings = 0
+let NERDCommentWholeLinesInVMode = 1
 
 " }}}
 
@@ -114,6 +119,9 @@ inoremap jj <Esc>
 
 "make
 nnoremap <Leader>k :make<CR>
+
+" comments
+map <Leader>c <plug>NERDCommenterToggle
 
 " quickfix
 nmap <Leader>n :cn<CR>

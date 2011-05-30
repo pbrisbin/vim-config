@@ -89,8 +89,6 @@ let g:haddock_indexfiledir = "/home/patrick/.vim/"
 let b:ghc_staticoptions    = '-ilib'
 
 " supertab
-let g:SuperTabLongestHighlight = 1
-let g:SuperTabLongestEnhanced  = 1
 let g:SuperTabDefaultCompletionType = 'context'
 let g:SuperTabContextDefaultCompletionType = "<c-n>"
 

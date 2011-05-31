@@ -170,7 +170,7 @@ endif
 " functions/commands {{{ 
 function! SetStatusLine()
   let l:s1="%3.3n\\ %f\\ %h%m%r%w"
-  let l:s2="[%{strlen(&filetype)?&filetype:'?'},\\ %{&encoding},\\ %{&fileformat}]"
+  let l:s2="[%{strlen(&filetype)?&filetype:'?'},\\ %{&encoding},\\ %{&fileformat}]\\ %{fugitive#statusline()}"
   let l:s3="%=\\ 0x%-8B\\ \\ %-14.(%l,%c%V%)\\ %<%P"
   execute "set statusline=" . l:s1 . l:s2 . l:s3
 endfunction

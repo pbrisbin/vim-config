@@ -115,6 +115,11 @@ nnoremap <C-p> :prev<CR>
 " escape is too far
 inoremap jj <Esc>
 
+" rson's delimitmate
+inoremap {<CR> {<CR>}<C-o>O<tab>
+inoremap [<CR> [<CR>]<C-o>O<tab>
+inoremap (<CR> (<CR>)<C-o>O<tab>
+
 "make
 nnoremap <Leader>k :make<CR>
 

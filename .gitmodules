@@ -10,10 +10,6 @@
 	path = bundle/html-template-syntax
 	url = git://github.com/pbrisbin/html-template-syntax.git
 	ignore = dirty
-[submodule "bundle/hlint"]
-	path = bundle/hlint
-	url = git://github.com/vim-scripts/hlint.git
-	ignore = dirty
 [submodule "bundle/hoogle"]
 	path = bundle/hoogle
 	url = https://github.com/Twinside/vim-hoogle.git

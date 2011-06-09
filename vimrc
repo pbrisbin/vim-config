@@ -1,5 +1,7 @@
 "
-" ~/.vimrc by pbrisbin 2010
+" ~/.vimrc 
+"
+" pbrisbin 2010, 2011
 "
 
 " load all submodules via pathogen
@@ -112,23 +114,13 @@ nnoremap <C-l> <C-w>l
 nnoremap <C-n> :next<CR>
 nnoremap <C-p> :prev<CR>
 
-" escape is too far
-inoremap jj <Esc>
-
 " rson's delimitmate
-inoremap {<CR> {<CR>}<C-o>O<tab>
-inoremap [<CR> [<CR>]<C-o>O<tab>
-inoremap (<CR> (<CR>)<C-o>O<tab>
-
-"make
-nnoremap <Leader>k :make<CR>
+inoremap {<CR> {<CR>}<C-o>O
+inoremap [<CR> [<CR>]<C-o>O
+inoremap (<CR> (<CR>)<C-o>O
 
 " comments
 map <Leader>c <plug>NERDCommenterToggle
-
-" quickfix
-nmap <Leader>n :cn<CR>
-nmap <Leader>p :cp<CR>
 
 " save the current file as root
 cmap w!! w !sudo tee % >/dev/null<CR>:e!<CR><CR>
@@ -136,39 +128,14 @@ cmap w!! w !sudo tee % >/dev/null<CR>:e!<CR><CR>
 " }}}
 
 " autocommands {{{
-if has('autocmd')
-  " vim itself
-  au FileType vim let g:StartComment = "\""
+au BufWritePost ~/.Xdefaults !xrdb ~/.Xdefaults
 
-  au BufWritePost ~/.vimrc     source %
-  au BufWritePost ~/.vim/vimrc source %
+au BufRead     * call SetStatusLine()
+au BufReadPost * call RestoreCursorPos()
+au BufWinEnter * call OpenFoldOnRestore()
 
-  " reload Xdefaults when written
-  au BufWritePost ~/.Xdefaults !xrdb ~/.Xdefaults
-
-  " always do these
-  au BufRead     * call SetStatusLine()
-  au BufReadPost * call RestoreCursorPos()
-  au BufWinEnter * call OpenFoldOnRestore()
-
-  au BufEnter * let &titlestring = "vim: " . substitute(expand("%:p"), $HOME, "~", '')
-  au BufEnter * let &titleold    = substitute(getcwd(), $HOME, "~", '')
-
-  " file types for nonstandard/additional config files
-  au BufEnter ~/.mutt/temp/* setlocal filetype=mail
-  au BufEnter ~/.xcolors/*   setlocal filetype=xdefaults
-  au BufEnter ~/.conky/*     setlocal filetype=conkyrc
-  au BufEnter *.hamlet       setlocal filetype=hamlet
-  au BufEnter *.cassius      setlocal filetype=cassius
-  au BufEnter *.julius       setlocal filetype=julius
-  au BufEnter *.rem          setlocal filetype=remind
-  au BufEnter *.pdc          setlocal filetype=pdc
-  au BufEnter *.md           setlocal filetype=pdc
-
-  if $SCREEN_CONF_DIR != ""
-    au BufEnter $SCREEN_CONF_DIR/* setlocal filetype=screen
-  endif
-endif
+au BufEnter * let &titlestring = "vim: " . substitute(expand("%:p"), $HOME, "~", '')
+au BufEnter * let &titleold    = substitute(getcwd(), $HOME, "~", '')
 
 " }}}
 

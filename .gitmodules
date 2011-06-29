@@ -29,3 +29,6 @@
 [submodule "bundle/vim-fugitive"]
 	path = bundle/vim-fugitive
 	url = git://github.com/tpope/vim-fugitive.git
+[submodule "bundle/syntaxconkyrc"]
+	path = bundle/syntaxconkyrc
+	url = git://github.com/vim-scripts/syntaxconkyrc.vim

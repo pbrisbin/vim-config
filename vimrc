@@ -140,6 +140,8 @@ au BufEnter * let &titleold    = substitute(getcwd(), $HOME, "~", '')
 " }}}
 
 " functions/commands {{{ 
+command! -range=% Share :<line1>,<line2>write !curl -F "sprunge=<-" http://sprunge.us | pee cat xclip
+
 function! SetStatusLine()
   let l:s1="%3.3n\\ %f\\ %h%m%r%w"
   let l:s2="[%{strlen(&filetype)?&filetype:'?'},\\ %{&encoding},\\ %{&fileformat}]\\ %{fugitive#statusline()}"

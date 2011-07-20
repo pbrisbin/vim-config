@@ -32,3 +32,6 @@
 [submodule "bundle/syntaxconkyrc"]
 	path = bundle/syntaxconkyrc
 	url = git://github.com/vim-scripts/syntaxconkyrc.vim
+[submodule "bundle/syntastic"]
+	path = bundle/syntastic
+	url = https://github.com/scrooloose/syntastic.git

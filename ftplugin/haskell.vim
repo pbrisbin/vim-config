@@ -1,10 +1,10 @@
 compiler ghc
-setlocal formatoptions+=w " for hamlet blocks
 setlocal path+=lib,config
 setlocal shiftwidth=4
 setlocal wildignore+=*.hi,*.o,dist/**
 
 let g:SuperTabContextDefaultCompletionType = '<c-x><c-o>'
 
-command! Interpret :! ghci %
-command! Run       :! runhaskell %
+map <Leader>m :make<cr>
+map <Leader>g :! ghci %<cr>
+map <Leader>r :! runhaskell %<cr>

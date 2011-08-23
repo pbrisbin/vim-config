@@ -34,3 +34,15 @@
 	path = bundle/syntaxconkyrc
 	url = git://github.com/vim-scripts/syntaxconkyrc.vim
 	ignore = dirty
+[submodule "bundle/vim-ruby"]
+	path = bundle/vim-ruby
+	url = git://github.com/vim-ruby/vim-ruby.git
+	ignore = dirty
+[submodule "bundle/vim-rails"]
+	path = bundle/vim-rails
+	url = git://github.com/tpope/vim-rails.git
+	ignore = dirty
+[submodule "bundle/vim-endwise"]
+	path = bundle/vim-endwise
+	url = git://github.com/tpope/vim-endwise.git
+	ignore = dirty

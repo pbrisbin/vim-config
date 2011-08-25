@@ -46,3 +46,7 @@
 	path = bundle/vim-endwise
 	url = git://github.com/tpope/vim-endwise.git
 	ignore = dirty
+[submodule "bundle/simplefold"]
+	path = bundle/simplefold
+	url = git://github.com/vim-scripts/simplefold.git
+	ignore = dirty

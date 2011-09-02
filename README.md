@@ -5,7 +5,8 @@ This is my vim.
 ### What this is tweaked/extended for
 
 * Haskell
-* Pandoc markdown
+* Ruby
+* Pandoc
 * Emails
 
 If you primarily use vim for day-to-day text editing plus these tasks, 
@@ -15,7 +16,6 @@ you might find my setup enjoyable.
 
 * C/C++
 * Python
-* Ruby
 
 If you develop heavily in these languages, you might consider someone 
 else's setup.
@@ -33,6 +33,10 @@ else's setup.
 * Initialize all of the submodule plugins
 
 `cd ~/.vim && git submodule update --init`
+
+* Compile command-t C extenstion
+
+`cd ~/.vim/bundle/command-t/ruby/command-t/ && ruby extconf.rb && make`
 
 * Link your .vimrc
 

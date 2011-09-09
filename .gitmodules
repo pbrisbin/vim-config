@@ -50,3 +50,7 @@
 	path = bundle/simplefold
 	url = git://github.com/vim-scripts/simplefold.git
 	ignore = dirty
+[submodule "bundle/vim-git"]
+	path = bundle/vim-git
+	url = git://github.com/tpope/vim-git.git
+	ignore = dirty

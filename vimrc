@@ -12,12 +12,6 @@ call pathogen#helptags()
 " options {{{
 set nocompatible
 
-" set 256 colors if we can
-if $TERM =~ "-256color"
-  set t_Co=256
-  colorscheme zenburn 
-endif
-
 " set the window title in screen
 if $STY != ""
   set t_ts=k
@@ -80,6 +74,18 @@ set wildmode=longest,full
 " syntax highlighting
 syntax on
 filetype plugin indent on
+
+if has('gui')
+  set guioptions=
+  let g:zenburn_high_Contrast=1
+  colors zenburn-gui
+" set 256 colors if we can
+elseif $TERM =~ "-256color"
+  set t_Co=256
+  colorscheme zenburn 
+endif
+
+
 
 " leader commands
 let mapleader = ','
@@ -188,3 +194,4 @@ MapToggle <F8> hlsearch
 MapToggle <F9> wrap 
 
 " }}}
+

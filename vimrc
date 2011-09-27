@@ -77,12 +77,12 @@ filetype plugin indent on
 
 if has('gui')
   set guioptions=
-  let g:zenburn_high_Contrast=1
-  colors zenburn-gui
+  "let g:zenburn_high_Contrast=1
+  colors zenburn
 " set 256 colors if we can
 elseif $TERM =~ "-256color"
   set t_Co=256
-  colorscheme zenburn 
+  colorscheme zenburn-cli
 endif
 
 

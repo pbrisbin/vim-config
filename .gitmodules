@@ -54,3 +54,7 @@
 	path = bundle/vim-git
 	url = git://github.com/tpope/vim-git.git
 	ignore = dirty
+[submodule "bundle/zenburn"]
+	path = bundle/zenburn
+	url = https://github.com/vim-scripts/Zenburn.git
+	ignore = dirty

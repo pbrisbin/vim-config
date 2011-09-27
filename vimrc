@@ -13,7 +13,7 @@ call pathogen#helptags()
 set nocompatible
 
 " set the window title in screen
-if $STY != ""
+if $STY != "" && !has('gui')
   set t_ts=k
   set t_fs=\
 endif
@@ -27,7 +27,7 @@ if has ('folding')
 endif
 
 " utf-8
-if has("multi_byte")
+if has('multi_byte')
   if &termencoding == ""
     let &termencoding = &encoding
   endif

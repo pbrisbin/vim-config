@@ -61,3 +61,4 @@
 [submodule "bundle/dbext"]
 	path = bundle/dbext
 	url = https://github.com/vim-scripts/dbext.vim.git
+	ignore = dirty

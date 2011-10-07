@@ -8,11 +8,11 @@
 	ignore = dirty
 [submodule "bundle/html-template-syntax"]
 	path = bundle/html-template-syntax
-	url = git://github.com/pbrisbin/html-template-syntax.git
+	url = git@github.com:pbrisbin/html-template-syntax.git
 	ignore = dirty
 [submodule "bundle/hoogle"]
 	path = bundle/hoogle
-	url = https://github.com/Twinside/vim-hoogle.git
+	url = git://github.com/Twinside/vim-hoogle.git
 	ignore = dirty
 [submodule "bundle/pdc"]
 	path = bundle/pdc
@@ -56,7 +56,7 @@
 	ignore = dirty
 [submodule "bundle/zenburn"]
 	path = bundle/zenburn
-	url = https://github.com/vim-scripts/Zenburn.git
+	url = git://github.com/vim-scripts/Zenburn.git
 	ignore = dirty
 [submodule "bundle/surround"]
 	path = bundle/surround

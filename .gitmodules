@@ -58,10 +58,6 @@
 	path = bundle/zenburn
 	url = https://github.com/vim-scripts/Zenburn.git
 	ignore = dirty
-[submodule "bundle/dbext"]
-	path = bundle/dbext
-	url = https://github.com/vim-scripts/dbext.vim.git
-	ignore = dirty
 [submodule "bundle/surround"]
 	path = bundle/surround
 	url = git://github.com/tpope/vim-surround.git

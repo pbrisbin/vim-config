@@ -65,7 +65,7 @@ set smarttab
 set splitbelow
 set splitright
 set tabstop=8
-set tags=tags
+set tags=tmp/tags
 set title
 set textwidth=72
 set visualbell t_vb=
@@ -82,8 +82,6 @@ elseif $TERM =~ "-256color"
   set t_Co=256
   colorscheme zenburn-cli
 endif
-
-
 
 " leader commands
 let mapleader = ','

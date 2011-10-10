@@ -69,3 +69,8 @@
 [submodule "bundle/rubytest"]
 	path = bundle/rubytest
 	url = git://github.com/janx/vim-rubytest.git
+	ignore = dirty
+[submodule "bundle/vimroom"]
+	path = bundle/vimroom
+	url = git://github.com/mikewest/vimroom.git
+	ignore = dirty

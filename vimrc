@@ -123,6 +123,9 @@ inoremap (<CR> (<CR>)<C-o>O
 " comments
 map <Leader>c <plug>NERDCommenterToggle
 
+" command-t
+nmap <silent> <Leader>F :CommandT<CR>
+
 " save the current file as root
 cmap w!! w !sudo tee % >/dev/null<CR>:e!<CR><CR>
 

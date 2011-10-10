@@ -66,3 +66,6 @@
 	path = bundle/additional-surroundings
 	url = git://github.com/km2r/vim-additional-surroundings.git
 	ignore = dirty
+[submodule "bundle/rubytest"]
+	path = bundle/rubytest
+	url = git://github.com/janx/vim-rubytest.git

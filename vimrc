@@ -12,6 +12,11 @@ call pathogen#helptags()
 " options {{{
 set nocompatible
 
+" 256 colors if we can
+if $TERM =~ "-256color"
+  set t_Co=256
+endif
+
 " set the window title in screen
 if $STY != "" && !has('gui')
   set t_ts=k
@@ -45,6 +50,7 @@ set completeopt=menuone,preview
 set cursorline
 set expandtab
 set formatoptions-=t
+set guioptions=
 set history=50
 set hlsearch
 set ignorecase
@@ -75,13 +81,10 @@ set wildmode=longest,full
 syntax on
 filetype plugin indent on
 
-if has('gui_running')
-  set guioptions=
-  colors zenburn
-elseif $TERM =~ "-256color"
-  set t_Co=256
-  colorscheme zenburn-cli
-endif
+" colorscheme
+let zenburn_old_Visual    = 1
+let zenburn_high_Contrast = 1
+colorscheme zenburn
 
 " leader commands
 let mapleader = ','

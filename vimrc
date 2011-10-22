@@ -99,8 +99,16 @@ let g:SuperTabDefaultCompletionType = 'context'
 let g:SuperTabContextDefaultCompletionType = "<c-n>"
 
 " commenter
-let NERDCreateDefaultMappings = 0
+let NERDCreateDefaultMappings    = 0
 let NERDCommentWholeLinesInVMode = 1
+
+let g:NERDCustomDelimiters = {
+    \ 'haskell': { 'left': '--'    , 'right': ''     },
+    \ 'hamlet' : { 'left': '\<!-- ', 'right': ' -->' },
+    \ 'cassius': { 'left': '/* '   , 'right': ' */'  },
+    \ 'lucius' : { 'left': '/* '   , 'right': ' */'  },
+    \ 'julius' : { 'left': '//'    , 'right': ''     }
+\ }
 
 " }}}
 

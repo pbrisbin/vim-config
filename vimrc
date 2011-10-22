@@ -92,7 +92,7 @@ let maplocalleader = ','
 
 " haskellmode-vim needs these set as early as possible
 let g:haddock_browser      = $BROWSER
-let g:haddock_indexfiledir = "/home/patrick/.vim/"
+let g:haddock_indexfiledir = $HOME . '/.vim/'
 
 " supertab
 let g:SuperTabDefaultCompletionType = 'context'

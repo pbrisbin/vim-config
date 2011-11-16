@@ -78,3 +78,7 @@
 	path = bundle/taghighlight
 	url = git://github.com/abudden/TagHighlight.git
 	ignore = dirty
+[submodule "bundle/vim-less"]
+	path = bundle/vim-less
+	url = git://github.com/groenewege/vim-less.git
+	ignore = dirty

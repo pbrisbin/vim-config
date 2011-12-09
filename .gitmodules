@@ -86,3 +86,7 @@
 	path = bundle/nginx
 	url = https://github.com/vim-scripts/nginx.vim.git
 	ignore = dirty
+[submodule "bundle/gist-vim"]
+	path = bundle/gist-vim
+	url = https://github.com/mattn/gist-vim.git
+	ignore = dirty

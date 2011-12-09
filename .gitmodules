@@ -82,3 +82,7 @@
 	path = bundle/ack
 	url = https://github.com/mileszs/ack.vim.git
 	ignore = dirty
+[submodule "bundle/nginx"]
+	path = bundle/nginx
+	url = https://github.com/vim-scripts/nginx.vim.git
+	ignore = dirty

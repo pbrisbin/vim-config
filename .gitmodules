@@ -94,3 +94,7 @@
 	path = bundle/vim-repeat
 	url = https://github.com/tpope/vim-repeat.git
 	ignore = dirty
+[submodule "bundle/rbrepl"]
+	path = bundle/rbrepl
+	url = https://github.com/Bogdanp/rbrepl.vim.git
+	ignore = dirty

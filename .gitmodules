@@ -90,3 +90,7 @@
 	path = bundle/gist-vim
 	url = https://github.com/mattn/gist-vim.git
 	ignore = dirty
+[submodule "bundle/vim-repeat"]
+	path = bundle/vim-repeat
+	url = https://github.com/tpope/vim-repeat.git
+	ignore = dirty

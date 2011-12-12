@@ -111,6 +111,18 @@ let g:NERDCustomDelimiters = {
     \ 'julius' : { 'left': '//'    , 'right': ''     }
 \ }
 
+" gist-vim
+let g:gist_open_browser_after_post = 1
+
+if has("unix")
+  let s:uname = system("uname")
+  if s:uname == "Darwin\n"
+    let g:gist_clip_command = 'pbcopy'
+  else
+    let g:gist_clip_command = 'xclip'
+  endif
+endif
+
 " }}}
 
 " keymaps {{{

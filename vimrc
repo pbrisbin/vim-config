@@ -75,6 +75,7 @@ set tags=tmp/tags
 set title
 set textwidth=72
 set visualbell t_vb=
+set wildignore+=*/tmp/*,*/.git/*
 set wildmode=longest,full
 
 " syntax highlighting
@@ -136,8 +137,6 @@ nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
 nnoremap <C-h> <C-w>h
 nnoremap <C-l> <C-w>l
-nnoremap <C-n> :next<CR>
-nnoremap <C-p> :prev<CR>
 
 " rson's delimitmate
 inoremap {<CR> {<CR>}<C-o>O
@@ -146,9 +145,6 @@ inoremap (<CR> (<CR>)<C-o>O
 
 " comments
 map <Leader>c <plug>NERDCommenterToggle
-
-" command-t
-nmap <silent> <Leader>F :CommandT<CR>
 
 " save the current file as root
 cmap w!! w !sudo tee % >/dev/null<CR>:e!<CR><CR>

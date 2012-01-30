@@ -22,10 +22,6 @@
 	path = bundle/nerdcommenter
 	url = git://github.com/scrooloose/nerdcommenter.git
 	ignore = dirty
-[submodule "bundle/command-t"]
-	path = bundle/command-t
-	url = git://github.com/wincent/Command-T.git
-	ignore = dirty
 [submodule "bundle/vim-fugitive"]
 	path = bundle/vim-fugitive
 	url = git://github.com/tpope/vim-fugitive.git
@@ -70,10 +66,6 @@
 	path = bundle/rubytest
 	url = git://github.com/janx/vim-rubytest.git
 	ignore = dirty
-[submodule "bundle/vimroom"]
-	path = bundle/vimroom
-	url = git://github.com/mikewest/vimroom.git
-	ignore = dirty
 [submodule "bundle/taghighlight"]
 	path = bundle/taghighlight
 	url = git://github.com/abudden/TagHighlight.git
@@ -101,4 +93,8 @@
 [submodule "bundle/rbrepl"]
 	path = bundle/rbrepl
 	url = https://github.com/Bogdanp/rbrepl.vim.git
+	ignore = dirty
+[submodule "bundle/ctrlp"]
+	path = bundle/ctrlp
+	url = https://github.com/kien/ctrlp.vim.git
 	ignore = dirty

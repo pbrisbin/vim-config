@@ -34,10 +34,6 @@ else's setup.
 
 `cd ~/.vim && git submodule update --init`
 
-* Compile command-t C extenstion
-
-`cd ~/.vim/bundle/command-t/ruby/command-t/ && ruby extconf.rb && make`
-
 * Link your .vimrc
 
 `ln -s ~/.vim/vimrc ~/.vimrc`

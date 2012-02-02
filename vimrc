@@ -75,7 +75,7 @@ set tags=tmp/tags
 set title
 set textwidth=72
 set visualbell t_vb=
-set wildignore+=*/tmp/*,*/.git/*
+set wildignore+=*/.git/*
 set wildmode=longest,full
 
 " syntax highlighting

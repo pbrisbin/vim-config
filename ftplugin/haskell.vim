@@ -1,7 +1,8 @@
 compiler ghc
 setlocal path+=lib,config
 setlocal shiftwidth=4
-setlocal wildignore+=*.hi,*.o,dist/**
+setlocal tags=tags
+setlocal wildignore+=*.hi,*.o,dist/**,tmp/**
 
 let g:SuperTabContextDefaultCompletionType = '<c-x><c-o>'
 

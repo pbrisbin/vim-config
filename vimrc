@@ -114,6 +114,7 @@ let g:NERDCustomDelimiters = {
 
 " gist-vim
 let g:gist_open_browser_after_post = 1
+let g:gist_show_privates = 1
 
 if has("unix")
   let s:uname = system("uname")

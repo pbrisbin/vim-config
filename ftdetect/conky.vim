@@ -1,1 +1,1 @@
-au BufEnter ~/.conky/* setlocal filetype=conkyrc
+au BufEnter ~/.xmonad/data/conky/* setlocal filetype=conkyrc

@@ -198,20 +198,4 @@ function! OpenFoldOnRestore()
   endif
 endfunction
 
-function! MapToggle(key, opt)
-  let cmd = ':set '.a:opt.'! \| set '.a:opt."?\<CR>"
-  exec 'nnoremap '.a:key.' '.cmd
-  exec 'inoremap '.a:key." \<C-O>".cmd
-endfunction
-
-command! -nargs=+ MapToggle call MapToggle(<f-args>)
-
-MapToggle <F4> foldenable 
-MapToggle <F5> number 
-MapToggle <F6> spell 
-MapToggle <F7> paste 
-MapToggle <F8> hlsearch 
-MapToggle <F9> wrap 
-
 " }}}
-

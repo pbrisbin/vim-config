@@ -165,7 +165,7 @@ au BufEnter * let &titleold    = substitute(getcwd(), $HOME, "~", '')
 " }}}
 
 " functions/commands {{{ 
-command! -range=% Sprunge :<line1>,<line2>write !curl -F "sprunge=<-" http://sprunge.us | pee cat xclip
+command! -range=% Sprunge :<line1>,<line2>write !curl -F "sprunge=<-" http://sprunge.us | read -r url; $BROWSER $url
 
 function! SetStatusLine()
   let l:s1="%3.3n\\ %f\\ %h%m%r%w"

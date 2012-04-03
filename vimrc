@@ -126,7 +126,9 @@ if has("unix")
 endif
 
 " ultisnips
-let g:UltiSnipsEditSplit = 'vertical'
+let g:UltiSnipsEditSplit   = 'vertical'
+let g:UltiSnipsSnippetsDir = "~/.vim/ultisnips"
+let g:UltiSnipsSnippetDirectories = ["UltiSnips", "ultisnips"]
 
 " }}}
 

@@ -125,6 +125,9 @@ if has("unix")
   endif
 endif
 
+" ultisnips
+let g:UltiSnipsEditSplit = 'vertical'
+
 " }}}
 
 " keymaps {{{

@@ -1,0 +1,5 @@
+snippet track "Add remote tracking of a branch" b,t
+[branch "${1:master}"]
+	remote = origin
+	merge  = refs/heads/$1
+endsnippet

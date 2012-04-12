@@ -1,0 +1,26 @@
+snippet init "Typical initializer" b
+def initialize(${1:args})
+  ${1/(\w+)(,| ?=|$)/@$1 = $1\n /g}
+end
+endsnippet
+
+snippet single "Singleton class" b
+include 'singleton'
+
+class ${1:ClassName}
+  include Singleton
+
+  def self.method_missing(meth, *args, &block)
+    self.instance.send(meth, *args, &block)
+  end
+
+  $0
+
+end
+endsnippet
+
+snippet missing "Method missing" b
+def method_missing(meth, *args, &block)
+  $0
+end
+endsnippet

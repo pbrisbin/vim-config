@@ -102,3 +102,7 @@
 	path = bundle/ultisnips
 	url = https://github.com/SirVer/ultisnips.git
 	ignore = dirty
+[submodule "bundle/vim-session"]
+	path = bundle/vim-session
+	url = https://github.com/xolox/vim-session
+	ignore = dirty

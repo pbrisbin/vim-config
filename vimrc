@@ -137,6 +137,10 @@ let g:UltiSnipsExpandTrigger       = '<tab>'
 let g:UltiSnipsJumpForwardTrigger  = '<tab>'
 let g:UltiSnipsJumpBackwardTrigger = '<s-tab>'
 
+" syntastic
+let g:syntastic_mode_map = { 'mode': 'active',
+                           \ 'passive_filetypes': ['haskell', 'html'] }
+
 " }}}
 
 " keymaps {{{

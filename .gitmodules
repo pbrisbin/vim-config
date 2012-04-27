@@ -114,3 +114,7 @@
 	path = bundle/vim-jade
 	url = https://github.com/digitaltoad/vim-jade.git
 	ignore = dirty
+[submodule "bundle/vim-notes"]
+	path = bundle/vim-notes
+	url = https://github.com/xolox/vim-notes.git
+	ignore = dirty

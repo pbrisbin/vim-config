@@ -141,6 +141,9 @@ let g:UltiSnipsJumpBackwardTrigger = '<s-tab>'
 let g:syntastic_mode_map = { 'mode': 'active',
                            \ 'passive_filetypes': ['haskell', 'html'] }
 
+" vim-notes
+let g:notes_directory = '~/Dropbox/notes'
+
 " }}}
 
 " keymaps {{{

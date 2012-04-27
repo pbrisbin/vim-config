@@ -1,78 +1,78 @@
 [submodule "bundle/haskellmode"]
 	path = bundle/haskellmode
-	url = git://github.com/ehamberg/haskellmode-vim.git
+	url = https://github.com/ehamberg/haskellmode-vim.git
 	ignore = dirty
 [submodule "bundle/supertab"]
 	path = bundle/supertab
-	url = git://github.com/ervandew/supertab.git
+	url = https://github.com/ervandew/supertab.git
 	ignore = dirty
 [submodule "bundle/html-template-syntax"]
 	path = bundle/html-template-syntax
-	url = git@github.com:pbrisbin/html-template-syntax.git
+	url = https://github.com/pbrisbin/html-template-syntax.git
 	ignore = dirty
 [submodule "bundle/hoogle"]
 	path = bundle/hoogle
-	url = git://github.com/Twinside/vim-hoogle.git
+	url = https://github.com/Twinside/vim-hoogle.git
 	ignore = dirty
 [submodule "bundle/pdc"]
 	path = bundle/pdc
-	url = git://github.com/vim-scripts/pdc.vim.git
+	url = https://github.com/vim-scripts/pdc.vim.git
 	ignore = dirty
 [submodule "bundle/nerdcommenter"]
 	path = bundle/nerdcommenter
-	url = git://github.com/scrooloose/nerdcommenter.git
+	url = https://github.com/scrooloose/nerdcommenter.git
 	ignore = dirty
 [submodule "bundle/vim-fugitive"]
 	path = bundle/vim-fugitive
-	url = git://github.com/tpope/vim-fugitive.git
+	url = https://github.com/tpope/vim-fugitive.git
 	ignore = dirty
 [submodule "bundle/syntaxconkyrc"]
 	path = bundle/syntaxconkyrc
-	url = git://github.com/vim-scripts/syntaxconkyrc.vim
+	url = https://github.com/vim-scripts/syntaxconkyrc.vim
 	ignore = dirty
 [submodule "bundle/vim-ruby"]
 	path = bundle/vim-ruby
-	url = git://github.com/vim-ruby/vim-ruby.git
+	url = https://github.com/vim-ruby/vim-ruby.git
 	ignore = dirty
 [submodule "bundle/vim-rails"]
 	path = bundle/vim-rails
-	url = git://github.com/tpope/vim-rails.git
+	url = https://github.com/tpope/vim-rails.git
 	ignore = dirty
 [submodule "bundle/vim-endwise"]
 	path = bundle/vim-endwise
-	url = git://github.com/tpope/vim-endwise.git
+	url = https://github.com/tpope/vim-endwise.git
 	ignore = dirty
 [submodule "bundle/simplefold"]
 	path = bundle/simplefold
-	url = git://github.com/vim-scripts/simplefold.git
+	url = https://github.com/vim-scripts/simplefold.git
 	ignore = dirty
 [submodule "bundle/vim-git"]
 	path = bundle/vim-git
-	url = git://github.com/tpope/vim-git.git
+	url = https://github.com/tpope/vim-git.git
 	ignore = dirty
 [submodule "bundle/zenburn"]
 	path = bundle/zenburn
-	url = git://github.com/vim-scripts/Zenburn.git
+	url = https://github.com/vim-scripts/Zenburn.git
 	ignore = dirty
 [submodule "bundle/surround"]
 	path = bundle/surround
-	url = git://github.com/tpope/vim-surround.git
+	url = https://github.com/tpope/vim-surround.git
 	ignore = dirty
 [submodule "bundle/additional-surroundings"]
 	path = bundle/additional-surroundings
-	url = git://github.com/km2r/vim-additional-surroundings.git
+	url = https://github.com/km2r/vim-additional-surroundings.git
 	ignore = dirty
 [submodule "bundle/rubytest"]
 	path = bundle/rubytest
-	url = git://github.com/janx/vim-rubytest.git
+	url = https://github.com/janx/vim-rubytest.git
 	ignore = dirty
 [submodule "bundle/taghighlight"]
 	path = bundle/taghighlight
-	url = git://github.com/abudden/TagHighlight.git
+	url = https://github.com/abudden/TagHighlight.git
 	ignore = dirty
 [submodule "bundle/vim-less"]
 	path = bundle/vim-less
-	url = git://github.com/groenewege/vim-less.git
+	url = https://github.com/groenewege/vim-less.git
 	ignore = dirty
 [submodule "bundle/ack"]
 	path = bundle/ack

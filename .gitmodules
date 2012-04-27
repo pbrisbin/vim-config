@@ -110,3 +110,7 @@
 	path = bundle/syntastic
 	url = https://github.com/scrooloose/syntastic.git
 	ignore = dirty
+[submodule "bundle/vim-jade"]
+	path = bundle/vim-jade
+	url = https://github.com/digitaltoad/vim-jade.git
+	ignore = dirty

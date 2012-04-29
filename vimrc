@@ -139,7 +139,7 @@ let g:UltiSnipsJumpBackwardTrigger = '<s-tab>'
 
 " syntastic
 let g:syntastic_mode_map = { 'mode': 'active',
-                           \ 'passive_filetypes': ['haskell', 'html'] }
+                           \ 'passive_filetypes': ['haskell', 'html', 'tex'] }
 
 " vim-notes
 let g:notes_directory = '~/Dropbox/notes'

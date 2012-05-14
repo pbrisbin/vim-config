@@ -114,7 +114,7 @@ let g:NERDCustomDelimiters = {
     \ 'cassius': { 'left': '/* '   , 'right': ' */'  },
     \ 'lucius' : { 'left': '/* '   , 'right': ' */'  },
     \ 'julius' : { 'left': '//'    , 'right': ''     }
-\ }
+    \ }
 
 " gist-vim
 let g:gist_open_browser_after_post = 1
@@ -138,8 +138,10 @@ let g:UltiSnipsJumpForwardTrigger  = '<tab>'
 let g:UltiSnipsJumpBackwardTrigger = '<s-tab>'
 
 " syntastic
-let g:syntastic_mode_map = { 'mode': 'active',
-                           \ 'passive_filetypes': ['haskell', 'html', 'tex'] }
+let g:syntastic_mode_map = {
+      \ 'mode': 'active',
+      \ 'passive_filetypes': ['haskell', 'html', 'tex']
+      \ }
 
 " vim-notes
 let g:notes_directory = '~/Dropbox/notes'

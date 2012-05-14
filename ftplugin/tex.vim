@@ -18,4 +18,4 @@ command! Open :Silent file="%"; zathura --fork "${file/.tex/.pdf}"
 command! Refresh :Silent pdflatex %
 
 map <Leader>o :w<cr>:Open<cr>
-map <Leader>r :w<cr>:Refresh<cr>
+map <Leader>R :w<cr>:Refresh<cr>

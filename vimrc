@@ -168,6 +168,9 @@ inoremap (<CR> (<CR>)<C-o>O
 " comments
 map <Leader>c <plug>NERDCommenterToggle
 
+" runfile
+map <Leader>r :Run<cr>
+
 " save the current file as root
 cmap w!! w !sudo tee % >/dev/null<CR>:e!<CR><CR>
 

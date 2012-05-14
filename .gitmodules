@@ -118,3 +118,7 @@
 	path = bundle/vim-notes
 	url = https://github.com/xolox/vim-notes.git
 	ignore = dirty
+[submodule "bundle/vim-runfile"]
+	path = bundle/vim-runfile
+	url = https://github.com/pbrisbin/vim-runfile
+	ignore = dirty

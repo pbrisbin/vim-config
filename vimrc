@@ -182,6 +182,7 @@ au BufWritePost ~/.Xdefaults !xrdb ~/.Xdefaults
 au BufRead     * call SetStatusLine()
 au BufReadPost * call RestoreCursorPos()
 au BufWinEnter * call OpenFoldOnRestore()
+au BufEnter    * call Mkdir()
 
 au BufEnter * let &titlestring = "vim: " . substitute(expand("%:p"), $HOME, "~", '')
 au BufEnter * let &titleold    = substitute(getcwd(), $HOME, "~", '')
@@ -190,6 +191,15 @@ au BufEnter * let &titleold    = substitute(getcwd(), $HOME, "~", '')
 
 " functions/commands {{{ 
 command! -range=% Sprunge :<line1>,<line2>write !curl -F "sprunge=<-" http://sprunge.us | read -r url; $BROWSER $url &>/dev/null; echo $url
+
+function! Mkdir()
+  let dir = expand('%:p:h')
+
+  if !isdirectory(dir)
+    call mkdir(dir, "p")
+    echo "created non-existing directory: " . dir
+  endif
+endfunction
 
 function! SetStatusLine()
   let l:s1="%3.3n\\ %f\\ %h%m%r%w"

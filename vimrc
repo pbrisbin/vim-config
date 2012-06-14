@@ -187,6 +187,11 @@ au BufEnter    * call Mkdir()
 au BufEnter * let &titlestring = "vim: " . substitute(expand("%:p"), $HOME, "~", '')
 au BufEnter * let &titleold    = substitute(getcwd(), $HOME, "~", '')
 
+" when an omnicompletion opens up a preview window (eclim) the following
+" will close the window on cursor movement or insert-exit
+autocmd CursorMovedI * if pumvisible() == 0|pclose|endif
+autocmd InsertLeave * if pumvisible() == 0|pclose|endif
+
 " }}}
 
 " functions/commands {{{ 

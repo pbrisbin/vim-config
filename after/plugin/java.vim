@@ -1,0 +1,2 @@
+" (re)enable eclim
+EclimEnable

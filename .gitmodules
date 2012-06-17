@@ -122,3 +122,7 @@
 	path = bundle/vim-runfile
 	url = https://github.com/pbrisbin/vim-runfile
 	ignore = dirty
+[submodule "bundle/cocoa-vim"]
+	path = bundle/cocoa-vim
+	url = https://github.com/msanders/cocoa.vim.git
+	ignore = dirty

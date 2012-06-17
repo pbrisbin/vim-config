@@ -63,6 +63,7 @@ set number
 set ruler
 set scrolloff=999
 set shiftwidth=2
+set shell=bash " zsh doesn't work with rvm
 set shortmess+=r
 set sm
 set smartcase

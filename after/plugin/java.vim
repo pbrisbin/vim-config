@@ -1,2 +1,4 @@
 " (re)enable eclim
-EclimEnable
+if exists('g:EclimHome')
+  EclimEnable
+endif

@@ -126,3 +126,7 @@
 	path = bundle/cocoa-vim
 	url = https://github.com/msanders/cocoa.vim.git
 	ignore = dirty
+[submodule "bundle/vim2hs"]
+	path = bundle/vim2hs
+	url = https://github.com/dag/vim2hs
+	ignore = dirty

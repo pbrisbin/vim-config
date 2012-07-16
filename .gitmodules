@@ -130,3 +130,7 @@
 	path = bundle/vim2hs
 	url = https://github.com/dag/vim2hs
 	ignore = dirty
+[submodule "bundle/vim-pandoc"]
+	path = bundle/vim-pandoc
+	url = https://github.com/vim-pandoc/vim-pandoc.git
+	ignore = dirty

@@ -14,10 +14,6 @@
 	path = bundle/hoogle
 	url = https://github.com/Twinside/vim-hoogle.git
 	ignore = dirty
-[submodule "bundle/pdc"]
-	path = bundle/pdc
-	url = https://github.com/vim-scripts/pdc.vim.git
-	ignore = dirty
 [submodule "bundle/nerdcommenter"]
 	path = bundle/nerdcommenter
 	url = https://github.com/scrooloose/nerdcommenter.git

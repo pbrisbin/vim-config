@@ -1,3 +1,3 @@
-" mail gets the same basic settings as pdc (markdown). namely, spelling
-" and paragraph wrapping stuffs.
-runtime! ftplugin/pdc.vim
+" mail gets the same basic settings as pandoc (markdown). namely,
+" spelling and paragraph wrapping stuffs.
+runtime! ftplugin/pandoc.vim

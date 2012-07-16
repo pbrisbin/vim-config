@@ -1,7 +1,3 @@
-source ~/.vim/autofix.vim
-
-setlocal formatoptions+=twn
-setlocal spell
-
-" tab for spelling suggestions
-let g:SuperTabContextDefaultCompletionType = '<c-x>s'
+" gitcommit gets the same basic settings as pandoc (markdown). namely,
+" spelling and paragraph wrapping stuffs.
+runtime! ftplugin/pandoc.vim

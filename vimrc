@@ -147,6 +147,10 @@ let g:syntastic_mode_map = {
 " vim-notes
 let g:notes_directory = '~/Dropbox/notes'
 
+" pandoc
+let g:pandoc_user_hard_wraps = 1
+let g:pandoc_auto_format = 1
+
 " }}}
 
 " keymaps {{{

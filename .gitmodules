@@ -130,3 +130,7 @@
 	path = bundle/vim-pandoc
 	url = https://github.com/vim-pandoc/vim-pandoc.git
 	ignore = dirty
+[submodule "bundle/nerdtree"]
+	path = bundle/nerdtree
+	url = https://github.com/scrooloose/nerdtree.git
+	ignore = dirty

@@ -134,3 +134,7 @@
 	path = bundle/nerdtree
 	url = https://github.com/scrooloose/nerdtree.git
 	ignore = dirty
+[submodule "bundle/webapi-vim"]
+	path = bundle/webapi-vim
+	url = https://github.com/mattn/webapi-vim.git
+	ignore = dirty

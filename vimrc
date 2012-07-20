@@ -211,6 +211,30 @@ function! Mkdir()
   endif
 endfunction
 
+" based on https://github.com/km2r/vim-currentfile
+function! Rename(dest)
+  if &modified
+    echoe "buffer is modified"
+    return
+  endif
+
+  if len(glob(a:dest))
+    echoe "destination already exists"
+    return
+  endif
+
+  let filename = expand("%:p")
+  let parent   = fnamemodify(a:dest, ":p:h")
+
+  if !isdirectory(parent)
+    call mkdir(parent, "p")
+  endif
+
+  exec "saveas " . a:dest
+  call delete(filename)
+endfunction
+command! -nargs=1 -complete=file Rename call Rename(<f-args>)
+
 function! SetStatusLine()
   let l:s1="%3.3n\\ %f\\ %h%m%r%w"
   let l:s2="[%{strlen(&filetype)?&filetype:'?'},\\ %{&encoding},\\ %{&fileformat}]\\ %{fugitive#statusline()}"

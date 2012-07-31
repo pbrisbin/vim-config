@@ -138,3 +138,7 @@
 	path = bundle/webapi-vim
 	url = https://github.com/mattn/webapi-vim.git
 	ignore = dirty
+[submodule "bundle/tabular"]
+	path = bundle/tabular
+	url = https://github.com/godlygeek/tabular.git
+	ignore = dirty

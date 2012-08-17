@@ -44,7 +44,6 @@ endif
 " main options
 set autoindent
 set autowrite
-set background=dark
 set backspace=indent,eol,start
 set completeopt=menuone,preview
 set cursorline

@@ -93,10 +93,6 @@ colorscheme zenburn
 let mapleader = ','
 let maplocalleader = ','
 
-" sessions
-let g:session_autosave = 1
-let g:session_autoload = 1
-
 " haskellmode-vim needs these set as early as possible
 let g:haddock_browser      = $BROWSER
 let g:haddock_indexfiledir = $HOME . '/.vim/'

@@ -10,10 +10,6 @@
 	path = bundle/html-template-syntax
 	url = https://github.com/pbrisbin/html-template-syntax.git
 	ignore = dirty
-[submodule "bundle/hoogle"]
-	path = bundle/hoogle
-	url = https://github.com/Twinside/vim-hoogle.git
-	ignore = dirty
 [submodule "bundle/nerdcommenter"]
 	path = bundle/nerdcommenter
 	url = https://github.com/scrooloose/nerdcommenter.git
@@ -38,14 +34,6 @@
 	path = bundle/vim-endwise
 	url = https://github.com/tpope/vim-endwise.git
 	ignore = dirty
-[submodule "bundle/simplefold"]
-	path = bundle/simplefold
-	url = https://github.com/vim-scripts/simplefold.git
-	ignore = dirty
-[submodule "bundle/vim-git"]
-	path = bundle/vim-git
-	url = https://github.com/tpope/vim-git.git
-	ignore = dirty
 [submodule "bundle/zenburn"]
 	path = bundle/zenburn
 	url = https://github.com/vim-scripts/Zenburn.git
@@ -53,18 +41,6 @@
 [submodule "bundle/surround"]
 	path = bundle/surround
 	url = https://github.com/tpope/vim-surround.git
-	ignore = dirty
-[submodule "bundle/additional-surroundings"]
-	path = bundle/additional-surroundings
-	url = https://github.com/km2r/vim-additional-surroundings.git
-	ignore = dirty
-[submodule "bundle/rubytest"]
-	path = bundle/rubytest
-	url = https://github.com/janx/vim-rubytest.git
-	ignore = dirty
-[submodule "bundle/taghighlight"]
-	path = bundle/taghighlight
-	url = https://github.com/abudden/TagHighlight.git
 	ignore = dirty
 [submodule "bundle/vim-less"]
 	path = bundle/vim-less
@@ -86,10 +62,6 @@
 	path = bundle/vim-repeat
 	url = https://github.com/tpope/vim-repeat.git
 	ignore = dirty
-[submodule "bundle/rbrepl"]
-	path = bundle/rbrepl
-	url = https://github.com/Bogdanp/rbrepl.vim.git
-	ignore = dirty
 [submodule "bundle/ctrlp"]
 	path = bundle/ctrlp
 	url = https://github.com/kien/ctrlp.vim.git
@@ -97,10 +69,6 @@
 [submodule "bundle/ultisnips"]
 	path = bundle/ultisnips
 	url = https://github.com/SirVer/ultisnips.git
-	ignore = dirty
-[submodule "bundle/vim-session"]
-	path = bundle/vim-session
-	url = https://github.com/xolox/vim-session
 	ignore = dirty
 [submodule "bundle/syntastic"]
 	path = bundle/syntastic

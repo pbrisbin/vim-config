@@ -49,6 +49,7 @@ set completeopt=menuone,preview
 set cursorline
 set expandtab
 set formatoptions-=t
+set formatoptions+=j
 set guioptions=
 set history=50
 set hlsearch
@@ -143,7 +144,7 @@ let g:syntastic_mode_map = {
 let g:notes_directory = '~/Dropbox/notes'
 
 " pandoc
-let g:pandoc_user_hard_wraps = 1
+let g:pandoc_use_hard_wraps = 1
 let g:pandoc_auto_format = 1
 
 " }}}

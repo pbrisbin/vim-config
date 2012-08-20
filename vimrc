@@ -200,7 +200,7 @@ autocmd InsertLeave * if pumvisible() == 0|pclose|endif
 " }}}
 
 " functions/commands {{{ 
-command! -range=% Sprunge :<line1>,<line2>write !curl -F "sprunge=<-" http://sprunge.us | read -r url; $BROWSER $url &>/dev/null; echo $url
+command! -range=% Sprunge :<line1>,<line2>write !curl -sF "sprunge=<-" http://sprunge.us
 
 function! Mkdir()
   let dir = expand('%:p:h')

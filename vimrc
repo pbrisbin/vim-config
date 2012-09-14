@@ -49,13 +49,14 @@ set completeopt=menuone,preview
 set cursorline
 set expandtab
 set formatoptions-=t
-set formatoptions+=j
 set guioptions=
 set history=50
 set hlsearch
 set ignorecase
 set incsearch
 set laststatus=2
+set list
+set listchars=trail:·
 set mouse=v
 set nobackup
 set nowrap
@@ -78,6 +79,12 @@ set textwidth=72
 set visualbell t_vb=
 set wildignore+=*/.git/*
 set wildmode=longest,full
+
+try
+  set formatoptions+=j
+catch
+  " ignore the error on machines without this option
+endtry
 
 " syntax highlighting
 syntax on

@@ -12,35 +12,6 @@ call pathogen#helptags()
 " options {{{
 set nocompatible
 
-" 256 colors if we can
-if $TERM =~ "-256color"
-  set t_Co=256
-endif
-
-" set the window title in screen
-if $STY != "" && !has('gui')
-  set t_ts=k
-  set t_fs=\
-endif
-
-" use folding if we can
-if has ('folding')
-  set foldenable
-  set foldmethod=marker
-  set foldmarker={{{,}}}
-  set foldcolumn=0
-endif
-
-" utf-8
-if has('multi_byte')
-  if &termencoding == ""
-    let &termencoding = &encoding
-  endif
-  set encoding=utf-8
-  setglobal fileencoding=utf-8
-  set fileencodings=ucs-bom,utf-8,latin1
-endif
-
 " main options
 set autoindent
 set autowrite
@@ -48,11 +19,9 @@ set backspace=indent,eol,start
 set completeopt=menuone,preview
 set cursorline
 set expandtab
+set foldmethod=marker
 set formatoptions-=t
-set guioptions=
 set history=50
-set hlsearch
-set ignorecase
 set incsearch
 set laststatus=2
 set list
@@ -65,14 +34,9 @@ set ruler
 set scrolloff=999
 set shell=bash " zsh doesn't work with rvm
 set shiftwidth=2
-set shortmess+=r
 set sm
-set smartcase
 set smartindent
 set smarttab
-set splitbelow
-set splitright
-set tabstop=8
 set tags=tmp/tags
 set title
 set textwidth=72

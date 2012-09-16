@@ -2,10 +2,6 @@
 	path = bundle/haskellmode
 	url = https://github.com/ehamberg/haskellmode-vim.git
 	ignore = dirty
-[submodule "bundle/supertab"]
-	path = bundle/supertab
-	url = https://github.com/ervandew/supertab.git
-	ignore = dirty
 [submodule "bundle/html-template-syntax"]
 	path = bundle/html-template-syntax
 	url = https://github.com/pbrisbin/html-template-syntax.git
@@ -42,21 +38,10 @@
 	path = bundle/surround
 	url = https://github.com/tpope/vim-surround.git
 	ignore = dirty
-[submodule "bundle/vim-less"]
-	path = bundle/vim-less
-	url = https://github.com/groenewege/vim-less.git
-	ignore = dirty
-[submodule "bundle/ack"]
-	path = bundle/ack
-	url = https://github.com/mileszs/ack.vim.git
 	ignore = dirty
 [submodule "bundle/nginx"]
 	path = bundle/nginx
 	url = https://github.com/vim-scripts/nginx.vim.git
-	ignore = dirty
-[submodule "bundle/gist-vim"]
-	path = bundle/gist-vim
-	url = https://github.com/mattn/gist-vim.git
 	ignore = dirty
 [submodule "bundle/vim-repeat"]
 	path = bundle/vim-repeat
@@ -66,10 +51,6 @@
 	path = bundle/ctrlp
 	url = https://github.com/kien/ctrlp.vim.git
 	ignore = dirty
-[submodule "bundle/ultisnips"]
-	path = bundle/ultisnips
-	url = https://github.com/SirVer/ultisnips.git
-	ignore = dirty
 [submodule "bundle/syntastic"]
 	path = bundle/syntastic
 	url = https://github.com/scrooloose/syntastic.git
@@ -78,17 +59,9 @@
 	path = bundle/vim-jade
 	url = https://github.com/digitaltoad/vim-jade.git
 	ignore = dirty
-[submodule "bundle/vim-notes"]
-	path = bundle/vim-notes
-	url = https://github.com/xolox/vim-notes.git
-	ignore = dirty
 [submodule "bundle/vim-runfile"]
 	path = bundle/vim-runfile
 	url = https://github.com/pbrisbin/vim-runfile
-	ignore = dirty
-[submodule "bundle/cocoa-vim"]
-	path = bundle/cocoa-vim
-	url = https://github.com/msanders/cocoa.vim.git
 	ignore = dirty
 [submodule "bundle/vim2hs"]
 	path = bundle/vim2hs
@@ -97,10 +70,6 @@
 [submodule "bundle/vim-pandoc"]
 	path = bundle/vim-pandoc
 	url = https://github.com/vim-pandoc/vim-pandoc.git
-	ignore = dirty
-[submodule "bundle/nerdtree"]
-	path = bundle/nerdtree
-	url = https://github.com/scrooloose/nerdtree.git
 	ignore = dirty
 [submodule "bundle/webapi-vim"]
 	path = bundle/webapi-vim

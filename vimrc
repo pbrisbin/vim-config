@@ -1,7 +1,7 @@
 "
 " ~/.vimrc 
 "
-" pbrisbin 2010, 2011
+" pbrisbin 2010, 2011, 2012
 "
 
 " load all submodules via pathogen

@@ -1,5 +1,5 @@
 " ignore bundles in command-t
-setlocal wildignore+=bundle/**
+setlocal wildignore+=*/bundle/*
 
 " re-source on changes
 au BufWritePost */.vimrc source %

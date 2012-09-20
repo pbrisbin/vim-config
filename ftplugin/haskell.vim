@@ -3,7 +3,7 @@ compiler ghc
 setlocal omnifunc=necoghc#omnifunc
 setlocal path+=lib,config
 setlocal shiftwidth=4
-setlocal wildignore+=*.hi,*.o,dist/**,tmp/**
+setlocal wildignore+=*.hi,*.o,*/dist/*
 
 map <Leader>g :! ghci %<cr>
 

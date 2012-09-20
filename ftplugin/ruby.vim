@@ -1,3 +1,7 @@
+compiler ruby
+
+setlocal wildignore+=*/coverage/*,*/doc/*,*/pkg/*
+
 function! Ctags()
   if isdirectory('app')
     " probably rails

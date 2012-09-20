@@ -73,7 +73,8 @@ colorscheme zenburn
 let g:haddock_browser      = $BROWSER
 let g:haddock_indexfiledir = $HOME . '/.vim/'
 
-" commenter
+let g:ctrlp_clear_cache_on_exit = 0
+
 let g:NERDCreateDefaultMappings    = 0
 let g:NERDCommentWholeLinesInVMode = 1
 let g:NERDCustomDelimiters = {
@@ -115,6 +116,14 @@ nnoremap <cr> :nohlsearch<cr>
 map <Leader>c <plug>NERDCommenterToggle
 map <Leader>r :Run<cr>
 map <Leader>m :make<cr>
+
+map <Leader>gm :CtrlP app/models<cr>
+map <Leader>gc :CtrlP app/controllers<cr>
+map <Leader>gv :CtrlP app/views<cr>
+
+map <Leader>gu :CtrlP test/unit<cr>
+map <Leader>gf :CtrlP test/functional<cr>
+map <Leader>gI :CtrlP test/integration<cr>
 
 " save the current file as root
 cmap w!! w !sudo tee % >/dev/null<cr>:e!<cr><cr>

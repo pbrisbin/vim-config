@@ -134,7 +134,7 @@ augroup vimrcEx
   autocmd!
 
   autocmd BufRead  * call SetStatusLine()
-  autocmd BufEnter * call Mkdir()
+  autocmd BufWritePre * call Mkdir()
 
   " Restore cursor position when reopening a file
   autocmd BufReadPost *

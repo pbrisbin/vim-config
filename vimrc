@@ -38,8 +38,10 @@ set shiftwidth=2
 set sm
 set smartindent
 set smarttab
-set title
 set textwidth=72
+set title
+set titleold=""
+set titlestring="vim: %F"
 set visualbell t_vb=
 set wildignore+=*/.git/*
 set wildmenu

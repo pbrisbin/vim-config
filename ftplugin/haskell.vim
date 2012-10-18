@@ -7,19 +7,14 @@ setlocal wildignore+=*.hi,*.o,*/dist/*
 
 map <Leader>g :! ghci %<cr>
 
-function! Ctags()
-  if glob('*.cabal') != ''
-    " in a haskell project, try to run ctags for main or Main which
-    " should be entry to the entire project.
-    if filereadable('main.hs')
-      execute ':silent !rm -f tags; echo ":ctags" | ghci -v0 main.hs 2>/dev/null &'
-    elseif filereadable('Main.hs')
-      execute ':silent !rm -f tags; echo ":ctags" | ghci -v0 Main.hs 2>/dev/null &'
-    endif
+if glob('*.cabal') != ''
+  " in a haskell project, try to run ctags for main or Main which
+  " should be entry to the entire project.
+  if filereadable('main.hs')
+    let b:ctags_command = 'echo ":ctags" | ghci -v0 main.hs'
+  elseif filereadable('Main.hs')
+    let b:ctags_command = 'echo ":ctags" | ghci -v0 Main.hs'
   endif
-endfunction
+endif
 
-command! Ctags call Ctags()
-
-autocmd BufEnter     *    call Ctags()
 autocmd BufWritePost *.hs GhcModCheckAndLintAsync

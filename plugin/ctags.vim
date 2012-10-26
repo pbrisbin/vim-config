@@ -1,26 +1,29 @@
+" Ctags
+"
+" pbrisbin 2012
+"
+" Removes b:ctags_file and runs b:ctags_command. Does nothing unless
+" b:ctags_command has been actively defined. b:ctags_file defaults to
+" tags.
+"
+" Be sure you only define a ctags command if you've done some check that
+" you are actually in a project directory. Otherwise, you may end up
+" with a runaway ctags process churning away at your home directory.
+"
 function! Ctags()
-  if exists('b:tags_command')
-    let tags_command = b:tags_command
-  elseif exists('g:tags_command')
-    let tags_command = g:tags_command
-  endif
-
-  " this must be a no-op if we've not configured the command, this
-  " prevents orphan tags files when we open up some rando file.
-  "
-  " to take advantage, when you set up that ctags command, also add some
-  " conditions to confirm you're in a real project directory.
-  "
-  if exists('tags_command')
-    " TODO: assumes default location of ./tags
-    let cmd = ':silent !rm -f tags; '.tags_command.' 2>/dev/null &'
+  if exists('b:ctags_command')
+    " vim lets you define multiple tags files. this doesn't work for us.
+    " we want to know an exact file so we can actively remove it.
+    if !exists('b:ctags_file')
+      let b:ctags_file = 'tags'
+    endif
 
     try
-      execute cmd
+      execute ':silent !rm -f '.b:ctags_file.'; '.b:ctags_command.' 2>/dev/null &'
     catch
       " ignore any errors
     endtry
-  end
+  endif
 endfunction
 
 command! Ctags call Ctags()

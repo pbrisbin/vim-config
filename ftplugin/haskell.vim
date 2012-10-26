@@ -17,4 +17,4 @@ if glob('*.cabal') != ''
   endif
 endif
 
-autocmd BufWritePost *.hs GhcModCheckAndLintAsync
+autocmd BufWritePost *.hs GhcModCheckAsync

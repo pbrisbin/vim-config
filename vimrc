@@ -94,6 +94,11 @@ let g:syntastic_mode_map = {
 
 let g:pandoc_use_hard_wraps = 1
 let g:pandoc_no_folding     = 1
+
+let g:runfile_by_name = {
+  \ '.*.feature': '!bundle exec cucumber %'
+  \ }
+
 " }}}
 
 " keymaps {{{

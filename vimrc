@@ -16,6 +16,7 @@ set nocompatible
 set autoindent
 set autowrite
 set backspace=indent,eol,start
+set colorcolumn=80
 set completeopt=menuone,preview
 set cursorline
 set expandtab

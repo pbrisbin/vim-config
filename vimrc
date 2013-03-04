@@ -40,13 +40,10 @@ set sm
 set smartindent
 set smarttab
 set textwidth=72
-set title
-set titleold=""
-set titlestring="vim: %F"
 set visualbell t_vb=
 set wildignore+=*/.git/*
 set wildmenu
-set wildmode=longest,list
+set wildmode=longest,full
 set winwidth=84
 set winheight=5
 set winminheight=5
@@ -99,41 +96,24 @@ let g:pandoc_no_folding     = 1
 let g:runfile_by_name = {
   \ '.*.feature': '!bundle exec cucumber %'
   \ }
-
 " }}}
 
 " keymaps {{{
-nnoremap q: <Nop>
-nnoremap q/ <Nop>
-nnoremap q? <Nop>
-
-" window/buffer navigation
 nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
 nnoremap <C-h> <C-w>h
 nnoremap <C-l> <C-w>l
 
-" rson's delimitmate
 inoremap {<cr> {<cr>}<C-o>O
 inoremap [<cr> [<cr>]<C-o>O
 inoremap (<cr> (<cr>)<C-o>O
 
-" tap enter again to remove hlsearch
 nnoremap <cr> :nohlsearch<cr>
 
 map <Leader>c <plug>NERDCommenterToggle
 map <Leader>r :Run<cr>
 map <Leader>m :make<cr>
 
-map <Leader>gm :CtrlP app/models<cr>
-map <Leader>gc :CtrlP app/controllers<cr>
-map <Leader>gv :CtrlP app/views<cr>
-
-map <Leader>gu :CtrlP test/unit<cr>
-map <Leader>gf :CtrlP test/functional<cr>
-map <Leader>gI :CtrlP test/integration<cr>
-
-" save the current file as root
 cmap w!! w !sudo tee % >/dev/null<cr>:e!<cr><cr>
 " }}}
 
@@ -155,7 +135,6 @@ augroup vimrcEx
   autocmd CursorMovedI * if pumvisible() == 0|pclose|endif
   autocmd InsertLeave  * if pumvisible() == 0|pclose|endif
 augroup END
-
 " }}}
 
 " functions/commands {{{ 
@@ -217,5 +196,4 @@ function! Rename(dest)
   call delete(filename)
 endfunction
 command! -nargs=1 -complete=file Rename call Rename(<f-args>)
-
 " }}}

@@ -91,3 +91,7 @@
 	path = bundle/puppet-syntax-vim
 	url = https://github.com/puppetlabs/puppet-syntax-vim.git
 	ignore = dirty
+[submodule "bundle/alt-ctags"]
+	path = bundle/alt-ctags
+	url = https://github.com/pbrisbin/alt-ctags
+	ignore = dirty

@@ -1,7 +1,7 @@
 compiler ghc
 
 setlocal omnifunc=necoghc#omnifunc
-setlocal path+=lib,config
+setlocal path+=config,templates
 setlocal shiftwidth=4
 setlocal wildignore+=*.hi,*.o,*/dist/*
 

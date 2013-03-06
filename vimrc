@@ -1,5 +1,5 @@
 "
-" ~/.vimrc 
+" ~/.vimrc
 "
 " pbrisbin 2010, 2011, 2012
 "

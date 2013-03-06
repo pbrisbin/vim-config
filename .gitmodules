@@ -14,10 +14,6 @@
 	path = bundle/vim-fugitive
 	url = https://github.com/tpope/vim-fugitive.git
 	ignore = dirty
-[submodule "bundle/syntaxconkyrc"]
-	path = bundle/syntaxconkyrc
-	url = https://github.com/vim-scripts/syntaxconkyrc.vim
-	ignore = dirty
 [submodule "bundle/vim-rails"]
 	path = bundle/vim-rails
 	url = https://github.com/tpope/vim-rails.git
@@ -35,10 +31,6 @@
 	url = https://github.com/tpope/vim-surround.git
 	ignore = dirty
 	ignore = dirty
-[submodule "bundle/nginx"]
-	path = bundle/nginx
-	url = https://github.com/vim-scripts/nginx.vim.git
-	ignore = dirty
 [submodule "bundle/vim-repeat"]
 	path = bundle/vim-repeat
 	url = https://github.com/tpope/vim-repeat.git
@@ -50,10 +42,6 @@
 [submodule "bundle/syntastic"]
 	path = bundle/syntastic
 	url = https://github.com/scrooloose/syntastic.git
-	ignore = dirty
-[submodule "bundle/vim-jade"]
-	path = bundle/vim-jade
-	url = https://github.com/digitaltoad/vim-jade.git
 	ignore = dirty
 [submodule "bundle/vim-runfile"]
 	path = bundle/vim-runfile
@@ -86,10 +74,6 @@
 [submodule "bundle/neco-ghc"]
 	path = bundle/neco-ghc
 	url = https://github.com/ujihisa/neco-ghc.git
-	ignore = dirty
-[submodule "bundle/puppet-syntax-vim"]
-	path = bundle/puppet-syntax-vim
-	url = https://github.com/puppetlabs/puppet-syntax-vim.git
 	ignore = dirty
 [submodule "bundle/alt-ctags"]
 	path = bundle/alt-ctags

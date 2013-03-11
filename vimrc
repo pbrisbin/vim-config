@@ -1,18 +1,11 @@
-"
-" ~/.vimrc
-"
-" pbrisbin 2010, 2011, 2012
-"
+" ~/.vimrc pbrisbin 2013
 
-" load all submodules via pathogen
 filetype off
 call pathogen#runtime_append_all_bundles()
 call pathogen#helptags()
 
-" ensure vim-only settings work as intended
 set nocompatible
 
-" Main Options {{{
 set autoindent
 set autowrite
 set backspace=indent,eol,start
@@ -26,7 +19,6 @@ set history=50
 set hlsearch
 set incsearch
 set laststatus=2
-set list
 set list listchars=tab:»·,trail:·
 set mouse=v
 set nobackup
@@ -34,9 +26,8 @@ set nowrap
 set number
 set ruler
 set scrolloff=999
-set shell=bash " zsh doesn't work with rvm
 set shiftwidth=2
-set sm
+set showmatch
 set smartindent
 set smarttab
 set textwidth=72
@@ -49,17 +40,12 @@ set winheight=5
 set winminheight=5
 set winheight=999
 
-try
-  set formatoptions+=j
-catch
-  " ignore on versions where this doesn't work.
-endtry
+" ignore on versions where this doesn't work (OSX)
+try | set formatoptions+=j | catch | endtry
 
 let mapleader = ','
 let maplocalleader = ','
-" }}}
 
-" syntax highlighting / color scheme {{{
 syntax on
 filetype plugin indent on
 
@@ -67,9 +53,7 @@ let g:zenburn_old_Visual       = 1
 let g:zenburn_alternate_Visual = 1
 let g:zenburn_high_Contrast    = 1
 colorscheme zenburn
-" }}}
 
-" plugin configuration {{{
 let g:haddock_browser      = $BROWSER
 let g:haddock_indexfiledir = $HOME . '/.vim/'
 
@@ -96,13 +80,11 @@ let g:pandoc_no_folding     = 1
 let g:runfile_by_name = {
   \ '.*.feature': '!bundle exec cucumber %'
   \ }
-" }}}
 
-" keymaps {{{
-nnoremap <C-j> <C-w>j
-nnoremap <C-k> <C-w>k
-nnoremap <C-h> <C-w>h
-nnoremap <C-l> <C-w>l
+"nnoremap <C-j> <C-w>j
+"nnoremap <C-k> <C-w>k
+"nnoremap <C-h> <C-w>h
+"nnoremap <C-l> <C-w>l
 
 inoremap {<CR> {<CR>}<C-o>O
 inoremap [<CR> [<CR>]<C-o>O
@@ -115,33 +97,27 @@ map <Leader>r :Run<CR>
 map <Leader>m :make<CR>
 
 cmap w!! w !sudo tee % >/dev/null<CR>:e!<CR><CR>
-" }}}
 
-" autocommands {{{
 augroup vimrcEx
   autocmd!
 
   autocmd BufRead  * call SetStatusLine()
   autocmd BufWritePre * call Mkdir()
 
-  " Restore cursor position when reopening a file
+  " Restore cursor position
   autocmd BufReadPost *
     \ if line("'\"") > 0 && line("'\"") <= line("$") |
     \   exe "normal g`\"" |
     \ endif
 
-  " when an omnicompletion opens up a preview window (eclim) the following
-  " will close the window on cursor movement or insert-exit
+  " When an omnicompletion opens up a preview window (eclim) the
+  " following will close the window on cursor movement or insert-exit
   autocmd CursorMovedI * if pumvisible() == 0|pclose|endif
   autocmd InsertLeave  * if pumvisible() == 0|pclose|endif
 augroup END
-" }}}
 
-" functions/commands {{{ 
 command! -range=% Sprunge :<line1>,<line2>write !curl -sF "sprunge=<-" http://sprunge.us
 
-" Called when opening every file. If the containing directory doesn't
-" exist, create it.
 function! Mkdir()
   let dir = expand('%:p:h')
 
@@ -158,7 +134,6 @@ function! SetStatusLine()
   execute "set statusline=" . l:s1 . l:s2 . l:s3
 endfunction
 
-" Simple supertab replacement
 function! InsertTab()
   let col = col('.') - 1
 
@@ -172,8 +147,7 @@ endfunction
 inoremap <tab> <c-r>=InsertTab()<CR>
 inoremap <s-tab> <c-p>
 
-" Rename the current file and update the buffer. Based on
-" https://github.com/km2r/vim-currentfile
+" Based on https://github.com/km2r/vim-currentfile
 function! Rename(dest)
   if &modified
     echoe "buffer is modified"
@@ -196,4 +170,3 @@ function! Rename(dest)
   call delete(filename)
 endfunction
 command! -nargs=1 -complete=file Rename call Rename(<f-args>)
-" }}}

@@ -108,7 +108,7 @@ inoremap {<cr> {<cr>}<C-o>O
 inoremap [<cr> [<cr>]<C-o>O
 inoremap (<cr> (<cr>)<C-o>O
 
-nnoremap <cr> :nohlsearch<cr>
+nnoremap <C-l> :<C-u>nohlsearch<cr><C-l>
 
 map <Leader>c <plug>NERDCommenterToggle
 map <Leader>r :Run<cr>

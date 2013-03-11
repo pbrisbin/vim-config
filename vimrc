@@ -104,17 +104,17 @@ nnoremap <C-k> <C-w>k
 nnoremap <C-h> <C-w>h
 nnoremap <C-l> <C-w>l
 
-inoremap {<cr> {<cr>}<C-o>O
-inoremap [<cr> [<cr>]<C-o>O
-inoremap (<cr> (<cr>)<C-o>O
+inoremap {<CR> {<CR>}<C-o>O
+inoremap [<CR> [<CR>]<C-o>O
+inoremap (<CR> (<CR>)<C-o>O
 
-nnoremap <C-l> :<C-u>nohlsearch<cr><C-l>
+nnoremap <C-l> :<C-u>nohlsearch<CR><C-l>
 
 map <Leader>c <plug>NERDCommenterToggle
-map <Leader>r :Run<cr>
-map <Leader>m :make<cr>
+map <Leader>r :Run<CR>
+map <Leader>m :make<CR>
 
-cmap w!! w !sudo tee % >/dev/null<cr>:e!<cr><cr>
+cmap w!! w !sudo tee % >/dev/null<CR>:e!<CR><CR>
 " }}}
 
 " autocommands {{{
@@ -169,7 +169,7 @@ function! InsertTab()
   endif
 endfunction
 
-inoremap <tab> <c-r>=InsertTab()<cr>
+inoremap <tab> <c-r>=InsertTab()<CR>
 inoremap <s-tab> <c-p>
 
 " Rename the current file and update the buffer. Based on

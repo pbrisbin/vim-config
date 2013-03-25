@@ -81,16 +81,6 @@ let g:runfile_by_name = {
   \ '.*.feature': '!bundle exec cucumber %'
   \ }
 
-nnoremap j <Nop>
-nnoremap k <Nop>
-nnoremap h <Nop>
-nnoremap l <Nop>
-
-vnoremap j <Nop>
-vnoremap k <Nop>
-vnoremap h <Nop>
-vnoremap l <Nop>
-
 inoremap {<CR> {<CR>}<C-o>O
 inoremap [<CR> [<CR>]<C-o>O
 inoremap (<CR> (<CR>)<C-o>O

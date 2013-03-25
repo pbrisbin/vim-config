@@ -10,8 +10,3 @@ $ cd ~/.vim
 $ git submodule update --init
 $ ln -s ~/.vim/vimrc ~/.vimrc
 ~~~
-
-Beware, I'm using hard mode right now. That means the `hjkl` keys do 
-nothing.
-
-You can learn with me, or adjust lines `84,92` to disable.

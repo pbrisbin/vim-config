@@ -37,7 +37,7 @@ set winheight=5
 set winminheight=5
 set winheight=999
 
-" ignore on versions where this doesn't work (OSX)
+" fails on OSX's vim
 try| set formatoptions+=j |catch|endtry
 
 let mapleader = ','
@@ -95,14 +95,13 @@ augroup vimrcEx
 
   autocmd BufWritePre * call Mkdir()
 
-  " Restore cursor position
+  " Restores cursor position
   autocmd BufReadPost *
     \ if line("'\"") > 0 && line("'\"") <= line("$") |
     \   exe "normal g`\"" |
     \ endif
 
-  " When an omnicompletion opens up a preview window (eclim) the
-  " following will close the window on cursor movement or insert-exit
+  " Closes preview on on cursor movement or insert-exit
   autocmd CursorMovedI * if pumvisible() == 0|pclose|endif
   autocmd InsertLeave  * if pumvisible() == 0|pclose|endif
 augroup END

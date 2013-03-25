@@ -15,12 +15,11 @@ set cursorline
 set expandtab
 set foldmethod=marker
 set formatoptions-=t
-set history=50
+set history=100
 set hlsearch
 set incsearch
 set laststatus=2
 set list listchars=tab:»·,trail:·
-set mouse=v
 set nobackup
 set nowrap
 set number
@@ -41,7 +40,7 @@ set winminheight=5
 set winheight=999
 
 " ignore on versions where this doesn't work (OSX)
-try | set formatoptions+=j | catch | endtry
+try| set formatoptions+=j |catch|endtry
 
 let mapleader = ','
 let maplocalleader = ','

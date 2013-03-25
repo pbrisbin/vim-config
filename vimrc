@@ -121,19 +121,6 @@ function! Mkdir()
   endif
 endfunction
 
-function! InsertTab()
-  let col = col('.') - 1
-
-  if !col || getline('.')[col - 1] !~ '\k'
-    return "\<tab>"
-  else
-    return "\<c-n>"
-  endif
-endfunction
-
-inoremap <tab> <c-r>=InsertTab()<CR>
-inoremap <s-tab> <c-p>
-
 " Based on https://github.com/km2r/vim-currentfile
 function! Rename(dest)
   if &modified

@@ -1,8 +1,6 @@
 " ~/.vimrc pbrisbin 2013
 
-filetype off
-call pathogen#runtime_append_all_bundles()
-call pathogen#helptags()
+silent! execute pathogen#infect()
 
 set nocompatible
 

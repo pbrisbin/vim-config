@@ -121,7 +121,6 @@ function! Mkdir()
   endif
 endfunction
 
-" Based on https://github.com/km2r/vim-currentfile
 function! Rename(dest)
   if &modified
     echoe "buffer is modified"

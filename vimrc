@@ -96,7 +96,6 @@ cmap w!! w !sudo tee % >/dev/null<CR>:e!<CR><CR>
 augroup vimrcEx
   autocmd!
 
-  autocmd BufRead  * call SetStatusLine()
   autocmd BufWritePre * call Mkdir()
 
   " Restore cursor position
@@ -120,13 +119,6 @@ function! Mkdir()
     call mkdir(dir, "p")
     echo "created non-existing directory: " . dir
   endif
-endfunction
-
-function! SetStatusLine()
-  let l:s1="%3.3n\\ %f\\ %h%m%r%w"
-  let l:s2="[%{strlen(&filetype)?&filetype:'?'},\\ %{&encoding},\\ %{&fileformat}]\\ %{fugitive#statusline()}"
-  let l:s3="%=\\ 0x%-8B\\ \\ %-14.(%l,%c%V%)\\ %<%P"
-  execute "set statusline=" . l:s1 . l:s2 . l:s3
 endfunction
 
 function! InsertTab()

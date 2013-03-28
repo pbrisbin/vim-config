@@ -6,9 +6,7 @@ set nocompatible
 
 set autoindent
 set autowrite
-set backspace=indent,eol,start
 set colorcolumn=80
-set completeopt=menuone,preview
 set cursorline
 set expandtab
 set foldmethod=marker
@@ -31,7 +29,6 @@ set textwidth=72
 set visualbell t_vb=
 set wildignore+=*/.git/*
 set wildmenu
-set wildmode=longest,full
 set winwidth=84
 set winheight=5
 set winminheight=5
@@ -100,10 +97,6 @@ augroup vimrcEx
     \ if line("'\"") > 0 && line("'\"") <= line("$") |
     \   exe "normal g`\"" |
     \ endif
-
-  " Closes preview on on cursor movement or insert-exit
-  autocmd CursorMovedI * if pumvisible() == 0|pclose|endif
-  autocmd InsertLeave  * if pumvisible() == 0|pclose|endif
 augroup END
 
 command! -range=% Sprunge :<line1>,<line2>write !curl -sF "sprunge=<-" http://sprunge.us

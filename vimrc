@@ -48,9 +48,6 @@ let g:zenburn_alternate_Visual = 1
 let g:zenburn_high_Contrast    = 1
 colorscheme zenburn
 
-let g:haddock_browser      = $BROWSER
-let g:haddock_indexfiledir = $HOME . '/.vim/'
-
 let g:ctrlp_clear_cache_on_exit = 0
 
 let g:NERDCreateDefaultMappings    = 0

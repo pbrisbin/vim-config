@@ -1,5 +1,3 @@
-compiler ghc
-
 setlocal omnifunc=necoghc#omnifunc
 setlocal path+=config,templates
 setlocal shiftwidth=4
@@ -16,5 +14,3 @@ if glob('*.cabal') != ''
     let b:ctags_command = 'echo ":ctags" | ghci -v0 Main.hs'
   endif
 endif
-
-autocmd BufWritePost *.hs GhcModCheckAndLintAsync

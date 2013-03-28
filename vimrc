@@ -86,17 +86,17 @@ cmap w!! w !sudo tee % >/dev/null<CR>:e!<CR><CR>
 
 augroup vimrcEx
   autocmd!
-
+  autocmd BufReadPost * call RestoreCursor()
   autocmd BufWritePre * call Mkdir()
-
-  " Restores cursor position
-  autocmd BufReadPost *
-    \ if line("'\"") > 0 && line("'\"") <= line("$") |
-    \   exe "normal g`\"" |
-    \ endif
 augroup END
 
 command! -range=% Sprunge :<line1>,<line2>write !curl -sF "sprunge=<-" http://sprunge.us
+
+function! RestoreCursor()
+  if line("'\"") > 0 && line("'\"") <= line("$")
+    exe "normal g`\""
+  endif
+endfunction
 
 function! Mkdir()
   let dir = expand('%:p:h')

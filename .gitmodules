@@ -55,21 +55,9 @@
 	path = bundle/vim-pandoc
 	url = https://github.com/vim-pandoc/vim-pandoc.git
 	ignore = dirty
-[submodule "bundle/webapi-vim"]
-	path = bundle/webapi-vim
-	url = https://github.com/mattn/webapi-vim.git
-	ignore = dirty
 [submodule "bundle/tabular"]
 	path = bundle/tabular
 	url = https://github.com/godlygeek/tabular.git
-	ignore = dirty
-[submodule "bundle/vimproc"]
-	path = bundle/vimproc
-	url = https://github.com/Shougo/vimproc.git
-	ignore = dirty
-[submodule "bundle/ghcmod-vim"]
-	path = bundle/ghcmod-vim
-	url = https://github.com/eagletmt/ghcmod-vim.git
 	ignore = dirty
 [submodule "bundle/neco-ghc"]
 	path = bundle/neco-ghc

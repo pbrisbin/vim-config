@@ -35,7 +35,7 @@ set winminheight=5
 set winheight=999
 
 " fails on OSX's vim
-try| set formatoptions+=j |catch|endtry
+silent! set formatoptions+=j
 
 let mapleader = ','
 let maplocalleader = ','

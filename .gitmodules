@@ -6,10 +6,6 @@
 	path = bundle/html-template-syntax
 	url = https://github.com/pbrisbin/html-template-syntax.git
 	ignore = dirty
-[submodule "bundle/nerdcommenter"]
-	path = bundle/nerdcommenter
-	url = https://github.com/scrooloose/nerdcommenter.git
-	ignore = dirty
 [submodule "bundle/vim-fugitive"]
 	path = bundle/vim-fugitive
 	url = https://github.com/tpope/vim-fugitive.git
@@ -66,4 +62,12 @@
 [submodule "bundle/alt-ctags"]
 	path = bundle/alt-ctags
 	url = https://github.com/pbrisbin/alt-ctags
+	ignore = dirty
+[submodule "bundle/vim-commentary"]
+	path = bundle/vim-commentary
+	url = https://github.com/tpope/vim-commentary.git
+	ignore = dirty
+[submodule "bundle/vim-ruby"]
+	path = bundle/vim-ruby
+	url = https://github.com/vim-ruby/vim-ruby.git
 	ignore = dirty

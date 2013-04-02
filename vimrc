@@ -50,16 +50,6 @@ colorscheme zenburn
 
 let g:ctrlp_clear_cache_on_exit = 0
 
-let g:NERDCreateDefaultMappings    = 0
-let g:NERDCommentWholeLinesInVMode = 1
-let g:NERDCustomDelimiters = {
-  \ 'haskell': { 'left': '--'    , 'right': ''     },
-  \ 'hamlet' : { 'left': '\<!-- ', 'right': ' -->' },
-  \ 'cassius': { 'left': '/* '   , 'right': ' */'  },
-  \ 'lucius' : { 'left': '/* '   , 'right': ' */'  },
-  \ 'julius' : { 'left': '//'    , 'right': ''     }
-  \ }
-
 let g:syntastic_mode_map = {
   \ 'mode': 'passive',
   \ 'active_filetypes': ['ruby']

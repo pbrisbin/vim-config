@@ -11,6 +11,7 @@ set cursorline
 set expandtab
 set foldmethod=marker
 set formatoptions-=t
+set formatoptions+=j
 set history=100
 set hlsearch
 set incsearch
@@ -34,32 +35,23 @@ set winheight=5
 set winminheight=5
 set winheight=999
 
-" fails on OSX's vim
-silent! set formatoptions+=j
-
 let mapleader = ','
 let maplocalleader = ','
 
 syntax on
 filetype plugin indent on
 
-let g:zenburn_old_Visual       = 1
-let g:zenburn_alternate_Visual = 1
-let g:zenburn_high_Contrast    = 1
-colorscheme zenburn
-
 let g:ctrlp_clear_cache_on_exit = 0
+let g:pandoc_no_folding         = 1
+let g:pandoc_use_hard_wraps     = 1
+let g:zenburn_alternate_Visual  = 1
+let g:zenburn_high_Contrast     = 1
+let g:zenburn_old_Visual        = 1
+colorscheme zenburn
 
 let g:syntastic_mode_map = {
   \ 'mode': 'passive',
   \ 'active_filetypes': ['ruby']
-  \ }
-
-let g:pandoc_use_hard_wraps = 1
-let g:pandoc_no_folding     = 1
-
-let g:runfile_by_name = {
-  \ '.*.feature': '!bundle exec cucumber %'
   \ }
 
 inoremap {<CR> {<CR>}<C-o>O
@@ -68,7 +60,6 @@ inoremap (<CR> (<CR>)<C-o>O
 
 nnoremap <C-l> :<C-u>nohlsearch<CR><C-l>
 
-map <Leader>c <plug>NERDCommenterToggle
 map <Leader>r :Run<CR>
 map <Leader>m :make<CR>
 

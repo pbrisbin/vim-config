@@ -12,7 +12,7 @@ set expandtab
 set foldmethod=marker
 set formatoptions-=t
 set formatoptions+=j
-set history=100
+set history=500
 set hlsearch
 set incsearch
 set laststatus=2
@@ -62,6 +62,8 @@ nnoremap <C-l> :<C-u>nohlsearch<CR><C-l>
 
 map <Leader>r :Run<CR>
 map <Leader>m :make<CR>
+map <Leader>f :e .<CR>
+map <Leader>fn :vs .<CR>
 
 cmap w!! w !sudo tee % >/dev/null<CR>:e!<CR><CR>
 
@@ -88,25 +90,13 @@ function! Mkdir()
   endif
 endfunction
 
-function! Rename(dest)
-  if &modified
-    echoe "buffer is modified"
-    return
+function! RenameFile()
+  let old_name = expand('%')
+  let new_name = input('New file name: ', old_name, 'file')
+
+  if new_name != '' && new_name != old_name
+    exec 'saveas ' . new_name
+    call delete(old_name)
   endif
-
-  if len(glob(a:dest))
-    echoe "destination already exists"
-    return
-  endif
-
-  let filename = expand("%:p")
-  let parent   = fnamemodify(a:dest, ":p:h")
-
-  if !isdirectory(parent)
-    call mkdir(parent, "p")
-  endif
-
-  exec "saveas " . a:dest
-  call delete(filename)
 endfunction
-command! -nargs=1 -complete=file Rename call Rename(<f-args>)
+map <Leader>n :call RenameFile()<CR>

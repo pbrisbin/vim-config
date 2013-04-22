@@ -3,6 +3,8 @@ compiler ruby
 setlocal wildignore+=*/coverage/*,*/doc/*,*/pkg/*
 
 map <Leader>e :%! xmpfilter<cr>
+map <Leader>t :!bundle exec rspec -c %<CR>
+map <Leader>s :!bundle exec rspec -c -l <C-R>= line('.')<CR> %<CR>
 
 if isdirectory('app')
   " probably rails

@@ -62,8 +62,6 @@ nnoremap <C-l> :<C-u>nohlsearch<CR><C-l>
 
 map <Leader>r :Run<CR>
 map <Leader>m :make<CR>
-map <Leader>f :e .<CR>
-map <Leader>fn :vs .<CR>
 
 cmap w!! w !sudo tee % >/dev/null<CR>:e!<CR><CR>
 

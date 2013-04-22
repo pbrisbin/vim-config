@@ -28,7 +28,7 @@ set smartindent
 set smarttab
 set textwidth=72
 set visualbell t_vb=
-set wildignore+=*/.git/*
+set wildignore+=*/.git/*,*/tmp/*
 set wildmenu
 set winwidth=84
 set winheight=5

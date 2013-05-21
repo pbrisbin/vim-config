@@ -30,7 +30,7 @@ set smarttab
 set textwidth=72
 set visualbell t_vb=
 set wildignore+=*/.git/*,*/tmp/*
-set wildmode=list:full
+set wildmode=list:longest
 set winwidth=84
 set winheight=5
 set winminheight=5

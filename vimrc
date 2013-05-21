@@ -1,6 +1,7 @@
 " ~/.vimrc pbrisbin 2013
 
 silent! execute pathogen#infect()
+silent! execute pathogen#helptags()
 
 set nocompatible
 

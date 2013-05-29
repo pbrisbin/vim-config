@@ -62,8 +62,9 @@ inoremap (<CR> (<CR>)<C-o>O
 
 nnoremap <C-l> :<C-u>nohlsearch<CR><C-l>
 
-map <Leader>r :Run<CR>
 map <Leader>m :make<CR>
+map <Leader>n :RenameFile<CR>
+map <Leader>r :Run<CR>
 
 cmap w!! w !sudo tee % >/dev/null<CR>:e!<CR><CR>
 
@@ -79,14 +80,3 @@ function! RestoreCursor()
     exe "normal g`\""
   endif
 endfunction
-
-function! RenameFile()
-  let old_name = expand('%')
-  let new_name = input('New file name: ', old_name, 'file')
-
-  if new_name != '' && new_name != old_name
-    exec 'saveas ' . new_name
-    call delete(old_name)
-  endif
-endfunction
-map <Leader>n :call RenameFile()<CR>

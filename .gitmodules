@@ -83,3 +83,7 @@
 	path = bundle/vim-mkdir
 	url = https://github.com/pbrisbin/vim-mkdir
 	ignore = dirty
+[submodule "bundle/vim-rename-file"]
+	path = bundle/vim-rename-file
+	url = https://github.com/pbrisbin/vim-rename-file
+	ignore = dirty

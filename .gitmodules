@@ -79,3 +79,7 @@
 	path = bundle/mustache.vim
 	url = https://github.com/juvenn/mustache.vim.git
 	ignore = dirty
+[submodule "bundle/vim-mkdir"]
+	path = bundle/vim-mkdir
+	url = https://github.com/pbrisbin/vim-mkdir
+	ignore = dirty

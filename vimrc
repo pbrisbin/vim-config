@@ -6,6 +6,7 @@ silent! execute pathogen#helptags()
 set nocompatible
 
 set autoindent
+set autoread
 set autowrite
 set colorcolumn=80
 set cursorline

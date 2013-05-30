@@ -87,3 +87,7 @@
 	path = bundle/vim-rename-file
 	url = https://github.com/pbrisbin/vim-rename-file
 	ignore = dirty
+[submodule "vim-restore-cursor"]
+	path = vim-restore-cursor
+	url = https://github.com/pbrisbin/vim-restore-cursor
+	ignore = dirty

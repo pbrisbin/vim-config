@@ -56,6 +56,14 @@ let g:syntastic_mode_map = {
   \ 'active_filetypes': ['ruby']
   \ }
 
+let g:ctags_excludes = [
+  \ '~/.bin/',
+  \ '~/.dotfiles/',
+  \ '~/.vim/',
+  \ '~/.xmonad/',
+  \ '~/.zsh/',
+  \ ]
+
 inoremap {<CR> {<CR>}<C-o>O
 inoremap [<CR> [<CR>]<C-o>O
 inoremap (<CR> (<CR>)<C-o>O

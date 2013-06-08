@@ -7,9 +7,8 @@ map <Leader>t :!bundle exec rspec -c -fd %<CR>
 map <Leader>s :!bundle exec rspec -c -fd -l <C-R>= line('.')<CR> %<CR>
 
 if isdirectory('app')
-  " probably rails
-  let b:ctags_command = 'ctags -R app lib vendor'
-elseif isdirectory('lib')
+  let b:ctags_command = "ctags -f '%f' -R --exclude='*.js' --langmap='ruby:+.rake.builder.rjs' --languages=-javascript app lib vendor"
+else
   " normal ruby project
-  let b:ctags_command = 'ctags -R lib'
+  let b:ctags_command = "ctags -f '%f' -R lib"
 endif

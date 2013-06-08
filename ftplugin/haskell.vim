@@ -5,6 +5,4 @@ setlocal wildignore+=*.hi,*.o,*/dist/*
 
 map <Leader>g :! ghci %<cr>
 
-if glob('*.cabal') != ''
-  let b:ctags_command = 'hs-ctags'
-endif
+let b:ctags_command = 'hs-ctags %f'

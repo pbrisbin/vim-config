@@ -59,9 +59,9 @@ let g:syntastic_mode_map = {
 let g:ctags_excludes = [
   \ '~/.bin/',
   \ '~/.dotfiles/',
-  \ '~/.vim/',
+  \ '~/.dotfiles/.vim/',
+  \ '~/.dotfiles/.zsh/',
   \ '~/.xmonad/',
-  \ '~/.zsh/',
   \ ]
 
 inoremap {<CR> {<CR>}<C-o>O

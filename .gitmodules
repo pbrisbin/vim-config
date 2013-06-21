@@ -90,3 +90,8 @@
 [submodule "bundle/vim-restore-cursor"]
 	path = bundle/vim-restore-cursor
 	url = https://github.com/pbrisbin/vim-restore-cursor
+	ignore = dirty
+[submodule "bundle/vim-bundler"]
+	path = bundle/vim-bundler
+	url = https://github.com/tpope/vim-bundler.git
+	ignore = dirty

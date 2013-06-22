@@ -8,7 +8,6 @@ set nocompatible
 set autoindent
 set autoread
 set autowrite
-set colorcolumn=80
 set cursorline
 set expandtab
 set foldmethod=marker
@@ -77,3 +76,7 @@ map <Leader>r :Run<CR>
 cmap w!! w !sudo tee % >/dev/null<CR>:e!<CR><CR>
 
 command! -range=% Sprunge :<line1>,<line2>write !curl -sF "sprunge=<-" http://sprunge.us
+
+let &colorcolumn = join(range(81,999),",")
+
+highlight ColorColumn ctermbg=235

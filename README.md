@@ -27,6 +27,8 @@ Install bundles:
 $ vim +BundleInstall +qall
 ~~~
 
+(You may get an error about zenburn, it's safe to ignore)
+
 Install `.vimrc`:
 
 ~~~

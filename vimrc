@@ -7,7 +7,6 @@ call vundle#rc()
 
 Bundle 'gmarik/vundle'
 Bundle 'dag/vim2hs'
-Bundle 'ehamberg/haskellmode-vim'
 Bundle 'godlygeek/tabular'
 Bundle 'juvenn/mustache.vim'
 Bundle 'kchmck/vim-coffee-script'

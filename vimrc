@@ -1,9 +1,35 @@
 " ~/.vimrc pbrisbin 2013
-
-silent! execute pathogen#infect()
-silent! execute pathogen#helptags()
-
 set nocompatible
+filetype off
+
+set rtp+=~/.vim/bundle/vundle/
+call vundle#rc()
+
+Bundle 'gmarik/vundle'
+Bundle 'dag/vim2hs'
+Bundle 'ehamberg/haskellmode-vim'
+Bundle 'godlygeek/tabular'
+Bundle 'juvenn/mustache.vim'
+Bundle 'kchmck/vim-coffee-script'
+Bundle 'kien/ctrlp.vim'
+Bundle 'pbrisbin/alt-ctags'
+Bundle 'pbrisbin/html-template-syntax'
+Bundle 'pbrisbin/vim-mkdir'
+Bundle 'pbrisbin/vim-rename-file'
+Bundle 'pbrisbin/vim-restore-cursor'
+Bundle 'pbrisbin/vim-runfile'
+Bundle 'scrooloose/syntastic'
+Bundle 'tpope/vim-bundler'
+Bundle 'tpope/vim-commentary'
+Bundle 'tpope/vim-endwise'
+Bundle 'tpope/vim-fugitive'
+Bundle 'tpope/vim-rails'
+Bundle 'tpope/vim-repeat'
+Bundle 'tpope/vim-surround'
+Bundle 'ujihisa/neco-ghc'
+Bundle 'vim-pandoc/vim-pandoc'
+Bundle 'vim-ruby/vim-ruby'
+Bundle 'vim-scripts/Zenburn'
 
 set autoindent
 set autoread

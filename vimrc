@@ -1,4 +1,3 @@
-" ~/.vimrc pbrisbin 2013
 set nocompatible
 filetype off
 
@@ -76,6 +75,7 @@ let g:pandoc_use_hard_wraps     = 1
 let g:zenburn_alternate_Visual  = 1
 let g:zenburn_high_Contrast     = 1
 let g:zenburn_old_Visual        = 1
+
 colorscheme zenburn
 
 let g:syntastic_mode_map = {
@@ -91,19 +91,8 @@ let g:ctags_excludes = [
   \ '~/.xmonad/',
   \ ]
 
-inoremap {<CR> {<CR>}<C-o>O
-inoremap [<CR> [<CR>]<C-o>O
-inoremap (<CR> (<CR>)<C-o>O
-
-nnoremap <C-l> :<C-u>nohlsearch<CR><C-l>
-
-map <Leader>m :make<CR>
 map <Leader>n :RenameFile<CR>
 map <Leader>r :Run<CR>
-
-cmap w!! w !sudo tee % >/dev/null<CR>:e!<CR><CR>
-
-command! -range=% Sprunge :<line1>,<line2>write !curl -sF "sprunge=<-" http://sprunge.us
 
 let &colorcolumn = join(range(81,999),",")
 

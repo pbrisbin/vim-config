@@ -1,7 +1,5 @@
 compiler ruby
 
-setlocal wildignore+=*/coverage/*,*/doc/*,*/pkg/*
-
 map <Leader>e :%! xmpfilter<cr>
 
 if isdirectory('app')
